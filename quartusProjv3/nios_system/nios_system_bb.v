@@ -30,7 +30,16 @@ module nios_system (
 	sram_CE_N,
 	sram_OE_N,
 	sram_WE_N,
-	switches_export);	
+	switches_export,
+	ps2_CLK,
+	ps2_DAT,
+	audio_ADCDAT,
+	audio_ADCLRCK,
+	audio_BCLK,
+	audio_DACDAT,
+	audio_DACLRCK,
+	audio_and_video_config_SDAT,
+	audio_and_video_config_SCLK);	
 
 	input		clk_clk;
 	output	[7:0]	hex_0_export;
@@ -63,4 +72,13 @@ module nios_system (
 	output		sram_OE_N;
 	output		sram_WE_N;
 	input	[17:0]	switches_export;
+	inout		ps2_CLK;
+	inout		ps2_DAT;
+	input		audio_ADCDAT;
+	input		audio_ADCLRCK;
+	input		audio_BCLK;
+	output		audio_DACDAT;
+	input		audio_DACLRCK;
+	inout		audio_and_video_config_SDAT;
+	output		audio_and_video_config_SCLK;
 endmodule

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_AQbU8CcaEeuBA_zZPH3xjQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_AQbU8ScaEeuBA_zZPH3xjQ" bindingContexts="_AQb-lScaEeuBA_zZPH3xjQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;part1.c&quot; tooltip=&quot;hw8/part1.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw8/part1.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;part2.c&quot; tooltip=&quot;hw8_pt2/part2.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw8_pt2/part2.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;Visual Studio Code Source File&quot; name=&quot;altera_avalon_jtag_uart_regs.h&quot; tooltip=&quot;hw7_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;Visual Studio Code Source File&quot; name=&quot;system.h&quot; tooltip=&quot;hw7_bsp/system.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/system.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;altera_avalon_jtag_uart_write.c&quot; tooltip=&quot;hw7_bsp/drivers/src/altera_avalon_jtag_uart_write.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/drivers/src/altera_avalon_jtag_uart_write.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;altera_avalon_jtag_uart_fd.c&quot; tooltip=&quot;hw7_bsp/drivers/src/altera_avalon_jtag_uart_fd.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/drivers/src/altera_avalon_jtag_uart_fd.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_write.c&quot; tooltip=&quot;hw7_bsp/HAL/src/alt_write.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/src/alt_write.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;writer.c&quot; tooltip=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\reent\writer.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\reent\writer.c&quot; project=&quot;hw8&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;fvwrite_small_dev.c&quot; tooltip=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fvwrite_small_dev.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fvwrite_small_dev.c&quot; project=&quot;hw8&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;fputs.c&quot; tooltip=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fputs.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fputs.c&quot; project=&quot;hw8&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_putstr.c&quot; tooltip=&quot;hw7_bsp/HAL/src/alt_putstr.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/src/alt_putstr.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;part1.c&quot; tooltip=&quot;hw7/part1.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7/part1.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;Visual Studio Code Source File&quot; name=&quot;alt_irq.h&quot; tooltip=&quot;hw7_bsp/HAL/inc/sys/alt_irq.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/inc/sys/alt_irq.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_irq_register.c&quot; tooltip=&quot;hw7_bsp/HAL/src/alt_irq_register.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/src/alt_irq_register.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_sys_init.c&quot; tooltip=&quot;hw7_bsp/alt_sys_init.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/alt_sys_init.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;piano.c&quot; tooltip=&quot;piano/piano.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/piano/piano.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;part1.c&quot; tooltip=&quot;hw8/part1.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw8/part1.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;part2.c&quot; tooltip=&quot;hw8_pt2/part2.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw8_pt2/part2.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;Visual Studio Code Source File&quot; name=&quot;altera_avalon_jtag_uart_regs.h&quot; tooltip=&quot;hw7_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;Visual Studio Code Source File&quot; name=&quot;system.h&quot; tooltip=&quot;hw7_bsp/system.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/system.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;altera_avalon_jtag_uart_write.c&quot; tooltip=&quot;hw7_bsp/drivers/src/altera_avalon_jtag_uart_write.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/drivers/src/altera_avalon_jtag_uart_write.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;altera_avalon_jtag_uart_fd.c&quot; tooltip=&quot;hw7_bsp/drivers/src/altera_avalon_jtag_uart_fd.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/drivers/src/altera_avalon_jtag_uart_fd.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_write.c&quot; tooltip=&quot;hw7_bsp/HAL/src/alt_write.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/src/alt_write.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;writer.c&quot; tooltip=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\reent\writer.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\reent\writer.c&quot; project=&quot;hw8&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;fvwrite_small_dev.c&quot; tooltip=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fvwrite_small_dev.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fvwrite_small_dev.c&quot; project=&quot;hw8&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;fputs.c&quot; tooltip=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fputs.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\intelFPGA_lite\18.1\nios2eds\bin\gnu\src\newlib-2.2\newlib\libc\stdio\fputs.c&quot; project=&quot;hw8&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_putstr.c&quot; tooltip=&quot;hw7_bsp/HAL/src/alt_putstr.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/src/alt_putstr.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;part1.c&quot; tooltip=&quot;hw7/part1.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7/part1.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;Visual Studio Code Source File&quot; name=&quot;alt_irq.h&quot; tooltip=&quot;hw7_bsp/HAL/inc/sys/alt_irq.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/inc/sys/alt_irq.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;C:\Program Files\Microsoft VS Code\Code.exe&quot; name=&quot;alt_irq_register.c&quot; tooltip=&quot;hw7_bsp/HAL/src/alt_irq_register.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/hw7_bsp/HAL/src/alt_irq_register.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_AQbU8ScaEeuBA_zZPH3xjQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_AQbU8icaEeuBA_zZPH3xjQ" label="%trimmedwindow.label.eclipseSDK" x="-8" y="-8" width="975" height="1069">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_AQbU8ScaEeuBA_zZPH3xjQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_AQbU8icaEeuBA_zZPH3xjQ" label="%trimmedwindow.label.eclipseSDK" x="213" y="6" width="975" height="1069">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -45,7 +45,7 @@
           <tags>persp.perspSC:com.altera.sbtgui.ui.debugPerspective</tags>
           <tags>persp.viewSC:com.altera.sbtgui.launch.hardware.ByteStreamConsoleView</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.debugActionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_AQbU9ScaEeuBA_zZPH3xjQ" selectedElement="_AQbU9icaEeuBA_zZPH3xjQ" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_AQbU9ScaEeuBA_zZPH3xjQ" selectedElement="_AQbU-ycaEeuBA_zZPH3xjQ" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_AQbU9icaEeuBA_zZPH3xjQ" elementId="topLeft" containerData="2069" selectedElement="_AQbU9ycaEeuBA_zZPH3xjQ">
               <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_AQbU9ycaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_AQbWPycaEeuBA_zZPH3xjQ"/>
@@ -53,7 +53,7 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_AQbU-ScaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_AQbWnCcaEeuBA_zZPH3xjQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_AQbU-icaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_AQbWnScaEeuBA_zZPH3xjQ"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_AQbU-ycaEeuBA_zZPH3xjQ" containerData="7931" selectedElement="_AQbU_CcaEeuBA_zZPH3xjQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_AQbU-ycaEeuBA_zZPH3xjQ" containerData="7931" selectedElement="_AQbVACcaEeuBA_zZPH3xjQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_AQbU_CcaEeuBA_zZPH3xjQ" containerData="7500" selectedElement="_AQbU_ScaEeuBA_zZPH3xjQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_AQbU_ScaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.editorss" containerData="7688" ref="_AQbWJycaEeuBA_zZPH3xjQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_AQbU_icaEeuBA_zZPH3xjQ" elementId="topRight" containerData="2312" selectedElement="_AQbU_ycaEeuBA_zZPH3xjQ">
@@ -162,127 +162,9 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_AQbWJycaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.editorss" selectedElement="_AQbWKCcaEeuBA_zZPH3xjQ">
-      <children xsi:type="basic:PartStack" xmi:id="_AQbWKCcaEeuBA_zZPH3xjQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_AQbWKScaEeuBA_zZPH3xjQ">
+      <children xsi:type="basic:PartStack" xmi:id="_AQbWKCcaEeuBA_zZPH3xjQ" elementId="org.eclipse.e4.primaryDataStack">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_AQbWKScaEeuBA_zZPH3xjQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="part1.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;part1.c&quot; partName=&quot;part1.c&quot; title=&quot;part1.c&quot; tooltip=&quot;hw8/part1.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/hw8/part1.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4793&quot; selectionTopPixel=&quot;680&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWKicaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWKycaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWLCcaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWLScaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWLicaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWLycaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWMCcaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWMScaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWMicaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWMycaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWNCcaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWNScaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWNicaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWNycaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWOCcaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWOScaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWOicaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWOycaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWPCcaEeuBA_zZPH3xjQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWPScaEeuBA_zZPH3xjQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_AQbWPicaEeuBA_zZPH3xjQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_AQbWPycaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.gif" tooltip="" closeable="true">
@@ -832,7 +714,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AQb8cScaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mDBUkCqVEeuZRP7pCjICpg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_AQcn1icaEeuBA_zZPH3xjQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_xB85MDQKEeuF07fiHJSRuA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_AQcn1icaEeuBA_zZPH3xjQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AQb8fycaEeuBA_zZPH3xjQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -847,7 +729,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_AQb86CcaEeuBA_zZPH3xjQ" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_AQb9AScaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+      <children xsi:type="menu:ToolBar" xmi:id="_AQb9AScaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AQb9FCcaEeuBA_zZPH3xjQ" elementId="group.nav" toBeRendered="false">
@@ -856,7 +738,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AQb9FicaEeuBA_zZPH3xjQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mDDJwCqVEeuZRP7pCjICpg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_AQcnSCcaEeuBA_zZPH3xjQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_xB_VcDQKEeuF07fiHJSRuA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_AQcnSCcaEeuBA_zZPH3xjQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AQb9IScaEeuBA_zZPH3xjQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

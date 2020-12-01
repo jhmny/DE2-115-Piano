@@ -364,6 +364,98 @@
 					"strict" : false
 				},
 				{
+					"name" : "sdram_wire_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_ba[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_ba[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_cas_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_dqm[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_dqm[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_dqm[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_dqm[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_ras_n",
+					"strict" : false
+				},
+				{
+					"name" : "sdram_wire_we_n",
+					"strict" : false
+				},
+				{
 					"name" : "sram_ADDR[0]",
 					"strict" : false
 				},
@@ -464,159 +556,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "sdram_wire_addr[0]",
+					"name" : "audio_DACDAT",
 					"strict" : false
 				},
 				{
-					"name" : "sdram_wire_addr[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[6]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[7]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[8]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[10]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[11]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_addr[12]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_ba[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_ba[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_cas_n",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_cs_n",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_dqm[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_dqm[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_dqm[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_dqm[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_ras_n",
-					"strict" : false
-				},
-				{
-					"name" : "sdram_wire_we_n",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[5]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[6]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[7]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[8]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[9]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[10]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[11]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[12]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[13]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[14]",
-					"strict" : false
-				},
-				{
-					"name" : "sram_DQ[15]",
+					"name" : "audio_and_video_config_SCLK",
 					"strict" : false
 				},
 				{
@@ -748,11 +692,95 @@
 					"strict" : false
 				},
 				{
+					"name" : "sram_DQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sram_DQ[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "audio_and_video_config_SDAT",
+					"strict" : false
+				},
+				{
 					"name" : "clk_clk",
 					"strict" : false
 				},
 				{
 					"name" : "reset_reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "audio_DACLRCK",
+					"strict" : false
+				},
+				{
+					"name" : "audio_BCLK",
 					"strict" : false
 				},
 				{
@@ -841,6 +869,14 @@
 				},
 				{
 					"name" : "switches_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "audio_ADCLRCK",
+					"strict" : false
+				},
+				{
+					"name" : "audio_ADCDAT",
 					"strict" : false
 				},
 				{

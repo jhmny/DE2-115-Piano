@@ -1,0 +1,1012 @@
+Archive member included to satisfy reference by file (symbol)
+
+../piano_bsp/\libhal_bsp.a(alt_load.o)
+                              ../piano_bsp//obj/HAL/src/crt0.o (alt_load)
+../piano_bsp/\libhal_bsp.a(alt_main.o)
+                              ../piano_bsp//obj/HAL/src/crt0.o (alt_main)
+../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_up_ps2_init)
+../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+../piano_bsp/\libhal_bsp.a(alt_close.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_main.o) (close)
+../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../piano_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../piano_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o) (alt_find_dev)
+../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_irq_register)
+../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_active)
+../piano_bsp/\libhal_bsp.a(alt_open.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (_alt_tick_rate)
+../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq_entry)
+../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_irq_register.o) (alt_irq)
+../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o) (alt_instruction_exception_entry)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_main.o) (exit)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                              c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_close.o) (errno)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                              ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o) (memcpy)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                              ../piano_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                              c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o) (__call_exitprocs)
+../piano_bsp/\libhal_bsp.a(alt_exit.o)
+                              c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000000000 0x0000000000000020
+new_sdram_controller_0 0x0000000000000020 0x0000000007ffffe0
+onchip_memory2_0 0x0000000008404000 0x0000000000004000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../piano_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/piano.o
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libstdc++.a
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libm.a
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a
+START GROUP
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a
+LOAD ../piano_bsp/\libhal_bsp.a
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libm.a
+END GROUP
+LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a
+                0x0000000000000000                __alt_mem_new_sdram_controller_0 = 0x0
+                0x0000000008404000                __alt_mem_onchip_memory2_0 = 0x8404000
+
+.entry          0x0000000000000000       0x20
+ *(.entry)
+ .entry         0x0000000000000000       0x20 ../piano_bsp//obj/HAL/src/crt0.o
+                0x0000000000000000                __reset
+
+.exceptions     0x0000000000000020      0x228
+                0x0000000000000020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000000020        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000000020        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000000020       0x54 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000000074       0x10 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000000084        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000000088        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000000008c        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000000008c        0x8 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000000094       0x14 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00000000000000a8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00000000000000a8        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00000000000000a8       0x54 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000000000fc       0xd8 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000000000fc                alt_irq_handler
+ .exceptions    0x00000000000001d4       0x74 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000000001d4                alt_instruction_exception_entry
+                0x0000000000000248                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000000248     0x2774
+                [!provide]                        PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000248       0x4c ../piano_bsp//obj/HAL/src/crt0.o
+                0x0000000000000248                _start
+ .text          0x0000000000000294       0x20 obj/default/piano.o
+                0x0000000000000294                main
+ .text          0x00000000000002b4       0xec ../piano_bsp/\libhal_bsp.a(alt_load.o)
+                0x000000000000031c                alt_load
+ .text          0x00000000000003a0       0x6c ../piano_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000003a0                alt_main
+ .text          0x000000000000040c      0x100 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000000440                alt_irq_init
+                0x0000000000000478                alt_sys_init
+ .text          0x000000000000050c      0x164 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x000000000000050c                altera_avalon_jtag_uart_read_fd
+                0x000000000000056c                altera_avalon_jtag_uart_write_fd
+                0x00000000000005cc                altera_avalon_jtag_uart_close_fd
+                0x000000000000061c                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x0000000000000670      0x3cc ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x0000000000000670                altera_avalon_jtag_uart_init
+                0x00000000000009d4                altera_avalon_jtag_uart_close
+ .text          0x0000000000000a3c       0xf0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x0000000000000a3c                altera_avalon_jtag_uart_ioctl
+ .text          0x0000000000000b2c      0x21c ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000000000000b2c                altera_avalon_jtag_uart_read
+ .text          0x0000000000000d48      0x224 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000000000000d48                altera_avalon_jtag_uart_write
+ .text          0x0000000000000f6c       0xf0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000000000fe8                alt_avalon_timer_sc_init
+ .text          0x000000000000105c      0x6b0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+                0x000000000000105c                read_RI_bit
+                0x0000000000001090                read_RE_bit
+                0x00000000000010c0                read_CE_bit
+                0x00000000000010f4                read_num_bytes_available
+                0x0000000000001124                read_data_valid
+                0x0000000000001158                read_data_byte
+                0x0000000000001184                alt_up_ps2_init
+                0x000000000000124c                alt_up_ps2_enable_read_interrupt
+                0x00000000000012a8                alt_up_ps2_disable_read_interrupt
+                0x0000000000001308                alt_up_ps2_write_data_byte
+                0x000000000000137c                alt_up_ps2_wait_for_ack
+                0x00000000000013e4                alt_up_ps2_write_data_byte_with_ack
+                0x0000000000001448                alt_up_ps2_read_data_byte_timeout
+                0x00000000000014e4                alt_up_ps2_read_data_byte
+                0x0000000000001554                alt_up_ps2_clear_fifo
+                0x00000000000015ac                alt_up_ps2_read_fd
+                0x0000000000001638                alt_up_ps2_write_fd
+                0x00000000000016d0                alt_up_ps2_open_dev
+ .text          0x000000000000170c      0x12c ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x000000000000170c                alt_alarm_start
+ .text          0x0000000000001838      0x10c ../piano_bsp/\libhal_bsp.a(alt_close.o)
+                0x0000000000001874                close
+ .text          0x0000000000001944       0x48 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000001944                alt_dcache_flush_all
+ .text          0x000000000000198c       0x2c ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00000000000019b8       0xe0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00000000000019f4                alt_dev_llist_insert
+ .text          0x0000000000001a98        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000001a98       0x90 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000000000001a98                alt_find_dev
+ .text          0x0000000000001b28       0x34 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000001b28                alt_icache_flush_all
+ .text          0x0000000000001b5c      0x140 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000000000001c20                alt_io_redirect
+ .text          0x0000000000001c9c      0x180 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+                0x0000000000001c9c                alt_irq_register
+ .text          0x0000000000001e1c        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000001e1c      0x254 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000000000001f1c                open
+ .text          0x0000000000002070       0x64 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000000000002070                alt_release_fd
+ .text          0x00000000000020d4      0x1a4 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00000000000020d4                alt_alarm_stop
+                0x0000000000002170                alt_tick
+ .text          0x0000000000002278       0x24 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000002278                altera_nios2_gen2_irq_init
+ .text          0x000000000000229c      0x108 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x000000000000229c                alt_find_file
+ .text          0x00000000000023a4       0xa4 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x00000000000023a4                alt_get_fd
+ .text          0x0000000000002448       0x90 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x0000000000002448                alt_icache_flush
+ .text          0x00000000000024d8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00000000000024d8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00000000000024d8        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00000000000024d8       0x9c ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x00000000000024d8                alt_exception_cause_generated_bad_addr
+ .text          0x0000000000002574        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .text.exit     0x0000000000002574       0x38 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                0x0000000000002574                exit
+ .text          0x00000000000025ac        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .text          0x00000000000025ac        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .text          0x00000000000025ac        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .text.memcmp   0x00000000000025ac       0x7c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                0x00000000000025ac                memcmp
+ .text          0x0000000000002628        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000002628      0x148 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                0x0000000000002628                memcpy
+ .text          0x0000000000002770        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000002770       0x98 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                0x0000000000002770                strlen
+ .text          0x0000000000002808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x0000000000002808      0x180 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                0x0000000000002808                __call_exitprocs
+ .text          0x0000000000002988       0x34 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+                0x0000000000002988                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext, ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00000000000029bc                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00000000000029bc                . = ALIGN (0x4)
+
+.rodata         0x00000000000029bc       0x74
+                0x00000000000029bc                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00000000000029bc                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000000000029bc       0x11 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ *fill*         0x00000000000029cd        0x3 
+ .rodata        0x00000000000029d0       0x4f ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ *fill*         0x0000000000002a1f        0x1 
+ .rodata        0x0000000000002a20        0xa ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ *fill*         0x0000000000002a2a        0x2 
+ .rodata.str1.4
+                0x0000000000002a2c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                                          0x2 (size before relaxing)
+ *(.rodata1)
+                0x0000000000002a30                . = ALIGN (0x4)
+                0x0000000000002a30                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00000000000029bc                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000000000002a30     0x16f0 load address 0x0000000000004120
+                0x0000000000002a30                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000002a30                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000002a30        0x0 ../piano_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000002a30        0x0 obj/default/piano.o
+ .data          0x0000000000002a30        0x0 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000002a30        0x0 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000002a30     0x10f8 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x0000000000003b28        0x0 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000003b28      0x1a8 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000003b28                alt_dev_null
+                0x0000000000003b50                alt_fd_list
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000003cd0        0x0 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000000003cd0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .data          0x0000000000003cd0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000003cd0      0x424 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .data          0x00000000000040f4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .data          0x00000000000040f4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .data          0x00000000000040f4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .data          0x00000000000040f4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .data          0x00000000000040f4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000000040f4        0x0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+                0x000000000000c0f4                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00000000000040f4       0x14 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00000000000040f4                alt_fs_list
+                0x00000000000040fc                alt_dev_list
+                0x0000000000004104                alt_max_fd
+ .sdata         0x0000000000004108        0x4 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000000000004108                alt_errno
+ .sdata         0x000000000000410c        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000000410c                alt_priority_mask
+ .sdata         0x0000000000004110        0x8 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000004110                alt_alarm_list
+ .sdata._global_impure_ptr
+                0x0000000000004118        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                0x0000000000004118                _global_impure_ptr
+ .sdata._impure_ptr
+                0x000000000000411c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                0x000000000000411c                _impure_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000004120                . = ALIGN (0x4)
+                0x0000000000004120                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata, ABSOLUTE (.))
+                0x0000000000004120                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000000000004120                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000000000005810      0x120
+                0x0000000000005810                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000005810        0xc ../piano_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000005810                alt_argc
+                0x0000000000005814                alt_argv
+                0x0000000000005818                alt_envp
+ .sbss          0x000000000000581c        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000000581c                alt_irq_active
+ .sbss          0x0000000000005820        0x8 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000005820                _alt_tick_rate
+                0x0000000000005824                _alt_nticks
+ .sbss          0x0000000000005828        0x4 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000005828                alt_instruction_exception_handler
+ .sbss          0x000000000000582c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                0x000000000000582c                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000005830        0x0 ../piano_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000005830        0x0 obj/default/piano.o
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .bss           0x0000000000005830        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000005830        0x0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x0000000000005830      0x100 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000005830                alt_irq
+                0x0000000000005930                . = ALIGN (0x4)
+                0x0000000000005930                __bss_end = ABSOLUTE (.)
+
+.new_sdram_controller_0
+                0x0000000000005930        0x0
+                [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_start, ABSOLUTE (.))
+ *(.new_sdram_controller_0 .new_sdram_controller_0. new_sdram_controller_0.*)
+                0x0000000000005930                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_end, ABSOLUTE (.))
+                0x0000000000005930                _end = ABSOLUTE (.)
+                0x0000000000005930                end = ABSOLUTE (.)
+                0x0000000000005930                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_load_addr, LOADADDR (.new_sdram_controller_0))
+
+.onchip_memory2_0
+                0x0000000008404000        0x0 load address 0x0000000000005930
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start, ABSOLUTE (.))
+ *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
+                0x0000000008404000                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_end, ABSOLUTE (.))
+                [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_load_addr, LOADADDR (.onchip_memory2_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/piano.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .comment       0x0000000000000023       0x24 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000023       0x24 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x558
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../piano_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/piano.o
+ .debug_aranges
+                0x0000000000000048       0x20 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000068       0x20 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000088       0x20 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000000000000a8       0x20 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x0000000000000108       0x20 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x0000000000000128       0x20 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x0000000000000148       0x20 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x0000000000000168       0x20 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_aranges
+                0x0000000000000188       0x20 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x00000000000001a8       0x20 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000000000001e8       0x20 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x0000000000000208       0x20 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x0000000000000228       0x18 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000240       0x20 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x0000000000000260       0x20 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000280       0x20 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_aranges
+                0x00000000000002c0       0x18 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000000000002d8       0x20 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000000000002f8       0x20 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x0000000000000318       0x20 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x0000000000000338       0x20 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000358       0x20 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x0000000000000378       0x20 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x0000000000000398       0x20 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000000000003b8       0x30 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000000000003e8       0x20 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x0000000000000408       0x38 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000440       0x28 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_aranges
+                0x0000000000000468       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000488       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000000000004a0       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000000000004b8       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000000000004d8       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x00000000000004f8       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000518       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000538       0x20 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x7476
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x84 ../piano_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000084       0x37 obj/default/piano.o
+ .debug_info    0x00000000000000bb      0x145 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000000200      0x157 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000000357      0x660 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000009b7      0x52e ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x0000000000000ee5      0x3c3 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x00000000000012a8      0x280 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000000000001528      0x35b ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000001883      0x356 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000000000001bd9      0x249 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x0000000000001e22      0x7d4 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_info    0x00000000000025f6      0x2e2 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x00000000000028d8      0x321 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x0000000000002bf9       0xa5 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000002c9e      0x49c ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x000000000000313a      0x1a9 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00000000000032e3       0xa6 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000003389      0x2e9 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000000000003672       0x92 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000003704      0x4a5 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000000000003ba9      0x329 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x0000000000003ed2       0x88 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000003f5a      0x3bb ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000000000004315      0x2b0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00000000000045c5      0x2af ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000000000004874       0xb8 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x000000000000492c      0x2e6 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000000000004c12      0x310 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x0000000000004f22       0xdc ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x0000000000004ffe       0x8d ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x000000000000508b      0x1a7 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000005232       0x93 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00000000000052c5      0x1e7 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x00000000000054ac      0x8e4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_info    0x0000000000005d90      0x8a1 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000006631       0x8a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000066bb      0x11a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000067d5      0x144 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000006919       0xe2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_info    0x00000000000069fb      0x965 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000000000007360      0x116 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x279d
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../piano_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012       0x2a obj/default/piano.o
+ .debug_abbrev  0x000000000000003c       0x9f ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000000000000db       0xc1 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x000000000000019c      0x19f ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000000000000033b      0x127 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x0000000000000462      0x19e ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x0000000000000600      0x111 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x0000000000000711      0x1aa ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00000000000008bb      0x1a8 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x0000000000000a63      0x155 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x0000000000000bb8      0x1a1 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_abbrev  0x0000000000000d59      0x162 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x0000000000000ebb      0x11f ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x0000000000000fda       0x5a ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000001034       0xd9 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x000000000000110d      0x114 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x0000000000001221       0x5a ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x000000000000127b       0xf0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x000000000000136b       0x42 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000000000013ad      0x114 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00000000000014c1      0x186 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_abbrev  0x0000000000001647       0x40 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000001687      0x148 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00000000000017cf       0xde ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00000000000018ad      0x16b ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000001a18       0x67 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000001a7f       0xf0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x0000000000001b6f      0x10d ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000000000001c7c       0x8c ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x0000000000001d08       0x12 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000001d1a      0x13a ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000001e54       0x12 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000001e66       0xdc ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x0000000000001f42      0x1e5 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000002127      0x18f c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000000000022b6       0x37 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00000000000022ed       0x7f c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x000000000000236c       0xa3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000000000000240f       0x90 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x000000000000249f      0x22e c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x00000000000026cd       0xd0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x0000000000000000     0x2996
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x72 ../piano_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000072       0x37 obj/default/piano.o
+ .debug_line    0x00000000000000a9       0x8e ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000137       0xcb ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000202      0x1cd ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000000000003cf      0x12f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x00000000000004fe      0x19f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x000000000000069d      0x131 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x00000000000007ce      0x185 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000000953      0x184 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000000ad7      0x113 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x0000000000000bea      0x1a5 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_line    0x0000000000000d8f      0x10d ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x0000000000000e9c      0x165 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x0000000000001001       0x61 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000001062       0xf8 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x000000000000115a       0xcf ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x0000000000001229       0x51 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x000000000000127a       0xb5 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x000000000000132f       0x50 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000000000000137f      0x133 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00000000000014b2      0x155 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x0000000000001607       0x50 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000001657      0x128 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x000000000000177f       0xae ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x000000000000182d      0x113 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000001940       0x8d ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000019cd       0xd1 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x0000000000001a9e       0xd4 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000000000001b72       0x81 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000000000001bf3       0x6b ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000001c5e       0xcd ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000001d2b       0xb3 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000001dde       0xba ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000001e98      0x1f9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000002091      0x15d c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_line    0x00000000000021ee       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_line    0x000000000000224a      0x173 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_line    0x00000000000023bd      0x189 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000002546      0x16c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000026b2      0x237 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00000000000028e9       0xad ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x0000000000000000      0xc58
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x34 obj/default/piano.o
+ .debug_frame   0x0000000000000034       0x5c ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000090       0x2c ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000000000000bc       0x88 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000144       0xb0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000000000001f4       0xa4 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x0000000000000298       0x34 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x00000000000002cc       0x38 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x0000000000000304       0x38 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000000000000033c       0x60 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x000000000000039c      0x2c0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_frame   0x000000000000065c       0x34 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x0000000000000690       0x60 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000000000006f0       0x34 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000000724       0x34 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000000758       0x60 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000000000007b8       0x38 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x00000000000007f0       0x38 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000828       0x60 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x0000000000000888       0x34 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_frame   0x00000000000008bc       0x84 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x0000000000000940       0x34 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x0000000000000974       0x5c ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x00000000000009d0       0x34 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000a04       0x38 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x0000000000000a3c       0x34 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x0000000000000a70       0x34 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x0000000000000aa4       0x38 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000000000000adc       0x5c ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_frame   0x0000000000000b38       0x28 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000b60       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000000b80       0x38 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000bb8       0x20 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000bd8       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000c2c       0x2c ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x0000000000000000     0x1c2b
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x9a obj/default/piano.o
+                                         0x9f (size before relaxing)
+ .debug_str     0x000000000000009a      0x1a6 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x225 (size before relaxing)
+ .debug_str     0x0000000000000240       0x91 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x1d9 (size before relaxing)
+ .debug_str     0x00000000000002d1      0x32f ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x51e (size before relaxing)
+ .debug_str     0x0000000000000600       0xb9 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                        0x3b7 (size before relaxing)
+ .debug_str     0x00000000000006b9       0xd1 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                                        0x36c (size before relaxing)
+ .debug_str     0x000000000000078a       0x4a ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                                        0x2a6 (size before relaxing)
+ .debug_str     0x00000000000007d4       0x7f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                        0x31c (size before relaxing)
+ .debug_str     0x0000000000000853       0x4a ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x31d (size before relaxing)
+ .debug_str     0x000000000000089d       0x6d ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                                        0x27f (size before relaxing)
+ .debug_str     0x000000000000090a      0x1e6 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+                                        0x445 (size before relaxing)
+ .debug_str     0x0000000000000af0       0x59 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                                        0x2b2 (size before relaxing)
+ .debug_str     0x0000000000000b49       0x44 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+                                        0x21e (size before relaxing)
+ .debug_str     0x0000000000000b8d       0x34 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x168 (size before relaxing)
+ .debug_str     0x0000000000000bc1      0x120 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x318 (size before relaxing)
+ .debug_str     0x0000000000000ce1       0x34 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                        0x1df (size before relaxing)
+ .debug_str     0x0000000000000d15       0x14 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x158 (size before relaxing)
+ .debug_str     0x0000000000000d29       0x24 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                        0x1ff (size before relaxing)
+ .debug_str     0x0000000000000d4d       0x34 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x168 (size before relaxing)
+ .debug_str     0x0000000000000d81       0x56 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                        0x329 (size before relaxing)
+ .debug_str     0x0000000000000dd7       0x70 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+                                        0x21b (size before relaxing)
+ .debug_str     0x0000000000000e47       0x17 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                        0x14d (size before relaxing)
+ .debug_str     0x0000000000000e5e       0x2f ../piano_bsp/\libhal_bsp.a(alt_open.o)
+                                        0x25e (size before relaxing)
+ .debug_str     0x0000000000000e8d       0x28 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                        0x1e6 (size before relaxing)
+ .debug_str     0x0000000000000eb5       0x4a ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                                        0x286 (size before relaxing)
+ .debug_str     0x0000000000000eff       0x3b ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x198 (size before relaxing)
+ .debug_str     0x0000000000000f3a       0x26 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+                                        0x20d (size before relaxing)
+ .debug_str     0x0000000000000f60       0x30 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                        0x22f (size before relaxing)
+ .debug_str     0x0000000000000f90       0x2c ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                        0x16e (size before relaxing)
+ .debug_str     0x0000000000000fbc       0x3a ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x1cb (size before relaxing)
+ .debug_str     0x0000000000000ff6      0x48b ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                                        0x5b3 (size before relaxing)
+ .debug_str     0x0000000000001481      0x498 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                                        0x5a4 (size before relaxing)
+ .debug_str     0x0000000000001919       0xc8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                                        0x59b (size before relaxing)
+ .debug_str     0x00000000000019e1       0x3c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                                        0x1c3 (size before relaxing)
+ .debug_str     0x0000000000001a1d       0xcc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                                        0x1ca (size before relaxing)
+ .debug_str     0x0000000000001ae9       0x68 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                                        0x1f1 (size before relaxing)
+ .debug_str     0x0000000000001b51       0x4e c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                                        0x1dd (size before relaxing)
+ .debug_str     0x0000000000001b9f       0x62 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                                        0x5c8 (size before relaxing)
+ .debug_str     0x0000000000001c01       0x2a ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+                                        0x18d (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x5bf
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x1e c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_loc     0x000000000000001e      0x126 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_loc     0x0000000000000144      0x266 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_loc     0x00000000000003aa       0x47 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_loc     0x00000000000003f1      0x1ce c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x30 ../piano_bsp//obj/HAL/src/crt0.o
+                0x0000000008000000                __alt_data_end = 0x8000000
+                0x0000000008000000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit, __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start, end)
+                [!provide]                        PROVIDE (__alt_heap_limit, 0x8000000)
+OUTPUT(piano.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000      0x158
+ .debug_ranges  0x0000000000000000       0x20 ../piano_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x30 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_ranges  0x0000000000000050       0x18 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x0000000000000068       0x28 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000090       0x10 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000000000000a0       0x30 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000000000000d0       0x18 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_ranges  0x00000000000000e8       0x10 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_ranges  0x00000000000000f8       0x10 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_ranges  0x0000000000000108       0x10 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_ranges  0x0000000000000118       0x10 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_ranges  0x0000000000000128       0x30 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
