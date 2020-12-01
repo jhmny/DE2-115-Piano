@@ -1,0 +1,155 @@
+/*
+ * part1.c
+ *
+ *  Created on: Nov 10, 2020
+ *      Author: Joshua
+ */
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "altera_avalon_timer_regs.h"
+#include "sys/alt_irq.h"
+#include "alt_types.h"
+
+volatile int edge_capture;
+int state = -1; //used to track of which button was last pressed
+int keyValue;
+int timerCount = 0; //count up
+int ledFlasher = 0;
+int hexCode[16] = {0b11000000, 0b11111001, 0b10100100, 0b10110000, 0b10011001, 0b10010010, 0b10000010, 0b11111000, 0b10000000, 0b10011000, 0b10001000, 0b10000011, 0b11000110, 0b10100001, 0b10000110, 0b10001110};
+
+void startTimer(int *time)
+{
+    alt_putstr("timer reset");
+    IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE, 0b00);    //clearing status
+    IOWR_32DIRECT(TIMER_0_BASE, 0xC, *time);                //set timer value
+    IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE, 0b0100); //start cont set to 0, timer will stop when it hits 0
+}
+
+void clearHex()
+{
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0xff); //clearing hexes
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0xff);
+}
+
+static void handle_button_interrupts(void *context, alt_u32 id)
+{
+    alt_putstr("\n isr");
+    /* cast the context pointer to an integer pointer. */
+    volatile int *edge_capture_ptr = (volatile int *)context;
+    /*
+* Read the edge capture register on the button PIO.
+* Store value.
+*/
+    //instet code here
+    //state setter
+    *edge_capture_ptr =
+        IORD_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE);
+    keyValue = IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
+    if (keyValue == 0b1101 && state != 0) //clear
+    {
+        alt_putstr("state reset");
+        state = 0;
+        ledFlasher = 0;
+        clearHex();
+        IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, 0x0);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0xff); //setting to start
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b10000111); //t
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b10101111); //r
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b10001000); //a
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b10000111); //t
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b10010010); //s
+    }
+    else if (keyValue == 0b1011 && state != 1) //stop
+    {
+        alt_putstr("\n stop");
+        state = 1;
+        IOWR_ALTERA_AVALON_TIMER_CONTROL(HIRES_TIMER_0_BASE, 0b0100); //stop
+        IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE, 0b00);          //clearing status
+        IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE, 0b1000);       //cont to 0
+    }
+    else if (keyValue == 0b0111 && state != 2) //start
+    {
+        state = 2;
+        clearHex();
+        int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+        startTimer(&randN);                 //sends in randomly generated value
+    }
+    /* Write to the edge capture register to reset it. */
+    IOWR_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0);
+    /* reset interrupt capability for the Button PIO. */
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(KEYS_BASE, 0xf);
+}
+
+/* Initialize the button_pio. */
+static void init_button_pio()
+{
+    alt_putstr("made it to inti");
+    /* Recast the edge_capture pointer to match the
+alt_irq_register() function prototype. */
+    void *edge_capture_ptr = (void *)&edge_capture;
+    /* Enable all 4 button interrupts. */
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(KEYS_BASE, 0xf);
+    /* Reset the edge capture register. */
+    IOWR_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0x0);
+    /* Register the ISR. */
+    alt_ic_isr_register(KEYS_IRQ_INTERRUPT_CONTROLLER_ID, KEYS_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+}
+void setHex(int value)
+{
+	int numA[4];
+	int i;
+    for (i = 0; i <= 4; i++)
+    {
+        int num = value % 10;
+        numA[i] = num;
+        value = value / 10;
+    }
+
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, hexCode[numA[0]]);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, hexCode[numA[1]]);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, hexCode[numA[2]]);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, hexCode[numA[3]]);
+}
+
+void flashLed()
+{
+}
+
+int main()
+{
+    int snapValue = 0;
+    init_button_pio();
+    clearHex();
+
+    while (1) //infinite while loop to wait for ints && IORD_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE) == 0b01
+    {
+        if (IORD_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE) == 0b01) //timer is done
+        {
+            alt_putstr("\n rand timer done");
+            while (state == 2)
+            {
+                timerCount++;
+                setHex(timerCount);
+                if (timerCount % 2000 > 500)
+                {
+                    IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, 0b111111111111111111);
+                }
+                else
+                {
+                    IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, 0x0);
+                }
+            }
+            alt_putstr("\n no longer state 2");
+        }
+    }
+    return 0;
+};

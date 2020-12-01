@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#define switches_base 0x084090f0
+#define ledg_base 0x084090c0
+#define keys_base 0x084090e0
+
+#include "altera_avalon_pio_regs.h"
+
+int main(void)
+{
+	int x;
+	int * green_leds = (int*) ledg_base;
+	volatile int * switches = (int*) switches_base;
+	while(1)	{
+		x = IORD_ALTERA_AVALON_PIO_DATA(switches_base);
+		IOWR_ALTERA_AVALON_PIO_DATA(ledg_base,x); //writes to pio's
+	}
+  return 0;
+}

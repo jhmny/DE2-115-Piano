@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#define switches_base 0x0840_90f0
+#define ledg_base 0x0840_90c0
+#define keys_base 0x0840_90e0
+int main()
+{
+	int * green_leds = (int*) ledg_base;
+	bolatile int * switches = (int*) switches_base;
+
+	while(1)	{
+		*(green_leds) = *(switches);
+	}
+  return 0;
+}

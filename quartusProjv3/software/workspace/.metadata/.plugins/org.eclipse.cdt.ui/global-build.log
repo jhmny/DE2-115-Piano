@@ -1,0 +1,244 @@
+10:00:19 **** Incremental Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]
+10:00:26 **** Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]
+10:00:27 **** Incremental Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]
+00:07:05 **** Build of configuration Nios II for project hw8 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part1.c to obj/default/part1.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part1.o part1.c
+part1.c: In function 'startTimer':
+part1.c:23:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part1.c: In function 'handle_button_interrupts':
+part1.c:89:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part1.c: In function 'init_button_pio':
+part1.c:110:69: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(KEYS_IRQ_INTERRUPT_CONTROLLER_ID, KEYS_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                     ^
+In file included from part1.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+part1.c: In function 'setHex':
+part1.c:121:9: error: break statement not within loop or switch
+         break;
+         ^
+make: *** [obj/default/part1.o] Error 1
+00:07:28 **** Build of configuration Nios II for project hw8 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part1.c to obj/default/part1.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part1.o part1.c
+part1.c: In function 'startTimer':
+part1.c:23:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part1.c: In function 'handle_button_interrupts':
+part1.c:89:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part1.c: In function 'init_button_pio':
+part1.c:110:69: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(KEYS_IRQ_INTERRUPT_CONTROLLER_ID, KEYS_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                     ^
+In file included from part1.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+part1.c: In function 'setHex':
+part1.c:121:9: error: break statement not within loop or switch
+         break;
+         ^
+make: *** [obj/default/part1.o] Error 1
+00:07:45 **** Incremental Build of configuration Nios II for project hw8 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part1.c to obj/default/part1.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part1.o part1.c
+part1.c: In function 'startTimer':
+part1.c:23:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part1.c: In function 'handle_button_interrupts':
+part1.c:89:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part1.c: In function 'init_button_pio':
+part1.c:110:69: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(KEYS_IRQ_INTERRUPT_CONTROLLER_ID, KEYS_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                     ^
+In file included from part1.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+part1.c: In function 'setHex':
+part1.c:121:9: error: break statement not within loop or switch
+         break;
+         ^
+make: *** [obj/default/part1.o] Error 1
+00:08:01 **** Build of configuration Nios II for project hw8 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part1.c to obj/default/part1.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part1.o part1.c
+part1.c: In function 'startTimer':
+part1.c:23:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part1.c: In function 'handle_button_interrupts':
+part1.c:89:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part1.c: In function 'init_button_pio':
+part1.c:110:69: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(KEYS_IRQ_INTERRUPT_CONTROLLER_ID, KEYS_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                     ^
+In file included from part1.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+Info: Linking hw8.elf
+nios2-elf-g++  -T'../hw7_bsp//linker.x' -msys-crt0='../hw7_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hw7_bsp/  -msmallc  -Wl,-Map=hw8.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hw8.elf obj/default/part1.o -lm -msys-lib=m
+nios2-elf-insert hw8.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409100 --timestamp 1604371818 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Desktop/178/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Desktop/178/quartusProjv3/software/hw7_bsp/../../nios_system.sopcinfo
+Info: (hw8.elf) 10 KBytes program size (code + initialized data).
+Info:           131061 KBytes free for stack + heap.
+Info: Creating hw8.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hw8.elf >hw8.objdump
+[hw8 build complete]
+00:08:04 **** Incremental Build of configuration Nios II for project hw8 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8 build complete]
+00:10:03 **** Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part2.c to obj/default/part2.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part2.o part2.c
+part2.c: In function 'startTimer':
+part2.c:24:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part2.c: In function 'handle_button_interrupts':
+part2.c:90:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part2.c: In function 'init_button_pio':
+part2.c:110:83: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID, JTAG_UART_0_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                                   ^
+In file included from part2.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+part2.c: In function 'setHex':
+part2.c:121:9: error: break statement not within loop or switch
+         break;
+         ^
+make: *** [obj/default/part2.o] Error 1
+00:10:04 **** Incremental Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part2.c to obj/default/part2.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part2.o part2.c
+part2.c: In function 'startTimer':
+part2.c:24:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part2.c: In function 'handle_button_interrupts':
+part2.c:90:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part2.c: In function 'init_button_pio':
+part2.c:110:83: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID, JTAG_UART_0_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                                   ^
+In file included from part2.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+part2.c: In function 'setHex':
+part2.c:121:9: error: break statement not within loop or switch
+         break;
+         ^
+make: *** [obj/default/part2.o] Error 1
+00:10:37 **** Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+Info: Compiling part2.c to obj/default/part2.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hw7_bsp//HAL/inc -I../hw7_bsp/ -I../hw7_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/part2.o part2.c
+part2.c: In function 'startTimer':
+part2.c:24:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("timer reset");
+     ^
+part2.c: In function 'handle_button_interrupts':
+part2.c:90:22: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         int randN = (rand() % 6500) + 1000; //generates random number between 2-15
+                      ^
+part2.c: In function 'init_button_pio':
+part2.c:110:83: warning: passing argument 3 of 'alt_ic_isr_register' from incompatible pointer type [-Wincompatible-pointer-types]
+     alt_ic_isr_register(JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID, JTAG_UART_0_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+                                                                                   ^
+In file included from part2.c:11:0:
+../hw7_bsp//HAL/inc/sys/alt_irq.h:195:12: note: expected 'alt_isr_func {aka void (*)(void *)}' but argument is of type 'void (*)(void *, alt_u32) {aka void (*)(void *, long unsigned int)}'
+ extern int alt_ic_isr_register(alt_u32 ic_id,
+            ^
+Info: Linking hw8_pt2.elf
+nios2-elf-g++  -T'../hw7_bsp//linker.x' -msys-crt0='../hw7_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hw7_bsp/  -msmallc  -Wl,-Map=hw8_pt2.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o hw8_pt2.elf obj/default/part2.o -lm -msys-lib=m
+nios2-elf-insert hw8_pt2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409100 --timestamp 1604371818 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Desktop/178/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Desktop/178/quartusProjv3/software/hw7_bsp/../../nios_system.sopcinfo
+Info: (hw8_pt2.elf) 10 KBytes program size (code + initialized data).
+Info:               131061 KBytes free for stack + heap.
+Info: Creating hw8_pt2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hw8_pt2.elf >hw8_pt2.objdump
+[hw8_pt2 build complete]
+00:10:39 **** Incremental Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]
+00:13:01 **** Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]
+00:13:03 **** Incremental Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]

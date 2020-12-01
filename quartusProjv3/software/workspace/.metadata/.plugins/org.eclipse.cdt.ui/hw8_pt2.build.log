@@ -1,0 +1,9 @@
+00:13:03 **** Incremental Build of configuration Nios II for project hw8_pt2 ****
+make all 
+Info: Building ../hw7_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hw7_bsp/
+[BSP build complete]
+[hw8_pt2 build complete]
+
+00:13:04 Build Finished (took 743ms)
+

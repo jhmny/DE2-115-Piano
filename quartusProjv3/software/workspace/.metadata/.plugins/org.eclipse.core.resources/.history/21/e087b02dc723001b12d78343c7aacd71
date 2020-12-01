@@ -1,0 +1,210 @@
+/*
+ * part1.c
+ *
+ *  Created on: Nov 10, 2020
+ *      Author: Joshua
+ */
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "altera_avalon_timer_regs.h"
+#include "sys/alt_irq.h"
+#include "alt_types.h"
+
+volatile int edge_capture;
+int state; //used to track pattern
+int keyValue;
+
+void clearHex()
+{
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0xff); //clearing hexes
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0xff);
+    IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0xff);
+}
+
+static void handle_button_interrupts(void *context, alt_u32 id)
+{
+    /* cast the context pointer to an integer pointer. */
+    volatile int *edge_capture_ptr = (volatile int *)context;
+    /*
+* Read the edge capture register on the button PIO.
+* Store value.
+*/
+    //instet code here
+    //state setter
+    keyValue = IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
+    alt_putstr(keyValue);
+    if (keyValue == 0b1101) //key1
+    {
+        alt_putstr("state reset");
+        state = 0;
+    }
+    else if (keyValue == 0b1011) //key2
+    {
+
+        if (state < 7)
+        {
+            alt_putstr("state increment");
+            state++;
+        }
+        else
+        {
+            alt_putstr("state to 0");
+            state = 0;
+        }
+    }
+    else if (keyValue == 0b0111) //key3
+    {
+        if (state > 0)
+        {
+            alt_putstr("state decrement");
+            state--;
+        }
+        else
+        {
+            alt_putstr("state to 7");
+            state = 7;
+        }
+    }
+
+    //pattern setter
+    switch (state)
+    {
+    case 0:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0b10000000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b11111000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b11111001);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b11000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b10000110);
+        break;
+    }
+    case 1:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0xff);       //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0b10000000); //8
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0b11111000); //7
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b11111001); //1
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b10000110); //e
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b11000110); //c
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b10000110); //e
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0xff);
+        break;
+    }
+    case 2:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0b10000000); //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0b11111000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0b11111001);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b11000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0xff);
+        break;
+    }
+    case 3:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0b11111000); //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0b11111001);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b11000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b10000000);
+        break;
+    }
+    case 4:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0b11111001); //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0b11000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b10000000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b11111000);
+        break;
+    }
+    case 5:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0b10000110); //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0b11000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b10000000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b11111000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b11111001);
+        break;
+    }
+    case 6:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0b11000110); //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b10000000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b11111000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b11111001);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b10000110);
+        break;
+    }
+    case 7:
+    {
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_0_BASE, 0b10000110); //clearing hexes
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_1_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_2_BASE, 0xff);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_3_BASE, 0b10000000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_4_BASE, 0b11111000);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_5_BASE, 0b11111001);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_6_BASE, 0b10000110);
+        IOWR_ALTERA_AVALON_PIO_DATA(HEX_7_BASE, 0b11000110);
+        break;
+    }
+    default:
+        break;
+    }
+
+    *edge_capture_ptr =
+        IORD_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE);
+    /* Write to the edge capture register to reset it. */
+    IOWR_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0);
+    /* reset interrupt capability for the Button PIO. */
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(KEYS_BASE, 0xf);
+}
+
+/* Initialize the button_pio. */
+static void init_button_pio()
+{
+    alt_putstr("made it to inti");
+    /* Recast the edge_capture pointer to match the
+alt_irq_register() function prototype. */
+    void *edge_capture_ptr = (void *)&edge_capture;
+    /* Enable all 4 button interrupts. */
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(KEYS_BASE, 0xf);
+    /* Reset the edge capture register. */
+    IOWR_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0x0);
+    /* Register the ISR. */
+    alt_ic_isr_register(KEYS_IRQ_INTERRUPT_CONTROLLER_ID, KEYS_IRQ, handle_button_interrupts, edge_capture_ptr, 0x0);
+}
+
+int main()
+{
+    init_button_pio();
+    clearHex();
+
+    while (1) //infinite while loop to wait for ints
+    {
+    }
+    return 0;
+};
