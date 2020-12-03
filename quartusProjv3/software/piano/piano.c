@@ -10,8 +10,8 @@
 #include "altera_up_avalon_ps2_regs.h"
 #include "altera_up_avalon_audio_and_video_config_regs"
 
-void main()
+int main()
 {
 
-    return;
+    return 0;
 }

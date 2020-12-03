@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 1, 2020 11:31:54 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1606851114113</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 2, 2020 4:19:35 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1606954775675</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\software\piano_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nios_system.sopcinfo</SopcDesignFile>
