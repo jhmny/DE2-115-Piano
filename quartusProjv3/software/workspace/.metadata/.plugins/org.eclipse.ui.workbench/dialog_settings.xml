@@ -11,8 +11,8 @@
 		<item value="Visual Studio Code Source File" key="EditorSelectionDialog.STORE_ID_DESCR"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="825" key="dialogHeight"/>
-		<item value="1440" key="dialogWidth"/>
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
