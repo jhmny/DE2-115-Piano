@@ -37,49 +37,49 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   9 .debug_aranges 00000558  00000000  00000000  00005148  2**3
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_info   00007476  00000000  00000000  000056a0  2**0
+ 10 .debug_info   00007481  00000000  00000000  000056a0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_abbrev 0000279d  00000000  00000000  0000cb16  2**0
+ 11 .debug_abbrev 000027aa  00000000  00000000  0000cb21  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_line   00002996  00000000  00000000  0000f2b3  2**0
+ 12 .debug_line   00002996  00000000  00000000  0000f2cb  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_frame  00000c58  00000000  00000000  00011c4c  2**2
+ 13 .debug_frame  00000c58  00000000  00000000  00011c64  2**2
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_str    00001c2b  00000000  00000000  000128a4  2**0
+ 14 .debug_str    00001c2b  00000000  00000000  000128bc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_loc    000005bf  00000000  00000000  000144cf  2**0
+ 15 .debug_loc    000005bf  00000000  00000000  000144e7  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_alt_sim_info 00000030  00000000  00000000  00014a90  2**2
+ 16 .debug_alt_sim_info 00000030  00000000  00000000  00014aa8  2**2
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_ranges 00000158  00000000  00000000  00014ac0  2**3
+ 17 .debug_ranges 00000158  00000000  00000000  00014ad8  2**3
                   CONTENTS, READONLY, DEBUGGING
- 18 .thread_model 00000003  00000000  00000000  000168ca  2**0
+ 18 .thread_model 00000003  00000000  00000000  000168e2  2**0
                   CONTENTS, READONLY
- 19 .cpu          0000000c  00000000  00000000  000168cd  2**0
+ 19 .cpu          0000000c  00000000  00000000  000168e5  2**0
                   CONTENTS, READONLY
- 20 .qsys         00000001  00000000  00000000  000168d9  2**0
+ 20 .qsys         00000001  00000000  00000000  000168f1  2**0
                   CONTENTS, READONLY
- 21 .simulation_enabled 00000001  00000000  00000000  000168da  2**0
+ 21 .simulation_enabled 00000001  00000000  00000000  000168f2  2**0
                   CONTENTS, READONLY
- 22 .sysid_hash   00000004  00000000  00000000  000168db  2**0
+ 22 .sysid_hash   00000004  00000000  00000000  000168f3  2**0
                   CONTENTS, READONLY
- 23 .sysid_base   00000004  00000000  00000000  000168df  2**0
+ 23 .sysid_base   00000004  00000000  00000000  000168f7  2**0
                   CONTENTS, READONLY
- 24 .sysid_time   00000004  00000000  00000000  000168e3  2**0
+ 24 .sysid_time   00000004  00000000  00000000  000168fb  2**0
                   CONTENTS, READONLY
- 25 .stderr_dev   0000000b  00000000  00000000  000168e7  2**0
+ 25 .stderr_dev   0000000b  00000000  00000000  000168ff  2**0
                   CONTENTS, READONLY
- 26 .stdin_dev    0000000b  00000000  00000000  000168f2  2**0
+ 26 .stdin_dev    0000000b  00000000  00000000  0001690a  2**0
                   CONTENTS, READONLY
- 27 .stdout_dev   0000000b  00000000  00000000  000168fd  2**0
+ 27 .stdout_dev   0000000b  00000000  00000000  00016915  2**0
                   CONTENTS, READONLY
- 28 .sopc_system_name 0000000b  00000000  00000000  00016908  2**0
+ 28 .sopc_system_name 0000000b  00000000  00000000  00016920  2**0
                   CONTENTS, READONLY
- 29 .quartus_project_dir 0000003c  00000000  00000000  00016913  2**0
+ 29 .quartus_project_dir 0000003c  00000000  00000000  0001692b  2**0
                   CONTENTS, READONLY
- 30 .jdi          00005c74  00000000  00000000  0001694f  2**0
+ 30 .jdi          00005c74  00000000  00000000  00016967  2**0
                   CONTENTS, READONLY
- 31 .sopcinfo     000af7b0  00000000  00000000  0001c5c3  2**0
+ 31 .sopcinfo     000af7b0  00000000  00000000  0001c5db  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00000000 l    d  .entry	00000000 .entry
@@ -768,14 +768,14 @@ alt_after_alt_main:
  *      Author: Joshua
  */
 
-void main()
+int main()
 {
      294:	deffff04 	addi	sp,sp,-4
      298:	df000015 	stw	fp,0(sp)
      29c:	d839883a 	mov	fp,sp
 
-    return;
-     2a0:	0001883a 	nop
+    return 0;
+     2a0:	0005883a 	mov	r2,zero
 }
      2a4:	e037883a 	mov	sp,fp
      2a8:	df000017 	ldw	fp,0(sp)
@@ -5141,7 +5141,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
     28b4:	10003226 	beq	r2,zero,2980 <__call_exitprocs+0x178>
     28b8:	a009883a 	mov	r4,r20
     28bc:	98800015 	stw	r2,0(r19)
-    28c0:	00000000 	call	0 <__alt_mem_new_sdram_controller_0>
+    28c0:	00000000 	call	0 <__reset>
     28c4:	9d000017 	ldw	r20,0(r19)
     28c8:	a03fe41e 	bne	r20,zero,285c <__alt_mem_onchip_memory2_0+0xf7bfe85c>
     28cc:	dfc00a17 	ldw	ra,40(sp)

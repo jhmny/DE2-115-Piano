@@ -5,8 +5,8 @@
  *      Author: Joshua
  */
 
-void main()
+int main()
 {
 
-    return;
+    return 0;
 }
