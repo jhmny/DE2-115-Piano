@@ -159,3 +159,676 @@ Info: Building ../piano_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
 [BSP build complete]
 [piano build complete]
+22:43:42 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:20:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:23:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:23:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:24:21: error: 'w' undeclared (first use in this function)
+         if (byte == w)
+                     ^
+piano.c:24:21: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:26:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:18:9: warning: unused variable 'ps2' [-Wunused-variable]
+     int ps2;
+         ^
+make: *** [obj/default/piano.o] Error 1
+22:44:01 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:20:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:23:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:23:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:24:21: error: 'w' undeclared (first use in this function)
+         if (byte == w)
+                     ^
+piano.c:24:21: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:26:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:18:9: warning: unused variable 'ps2' [-Wunused-variable]
+     int ps2;
+         ^
+make: *** [obj/default/piano.o] Error 1
+22:48:03 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:9: warning: unused variable 'ps2' [-Wunused-variable]
+     int ps2;
+         ^
+make: *** [obj/default/piano.o] Error 1
+22:48:04 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:9: warning: unused variable 'ps2' [-Wunused-variable]
+     int ps2;
+         ^
+make: *** [obj/default/piano.o] Error 1
+22:48:19 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:10: warning: unused variable 'ps2' [-Wunused-variable]
+     int *ps2;
+          ^
+make: *** [obj/default/piano.o] Error 1
+22:48:20 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:10: warning: unused variable 'ps2' [-Wunused-variable]
+     int *ps2;
+          ^
+make: *** [obj/default/piano.o] Error 1
+22:49:51 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:20: warning: unused variable 'ps2' [-Wunused-variable]
+     alt_up_ps2_dev ps2;
+                    ^
+make: *** [obj/default/piano.o] Error 1
+22:49:52 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:20: warning: unused variable 'ps2' [-Wunused-variable]
+     alt_up_ps2_dev ps2;
+                    ^
+make: *** [obj/default/piano.o] Error 1
+22:50:25 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:20: warning: unused variable 'ps2' [-Wunused-variable]
+     alt_up_ps2_dev ps2;
+                    ^
+make: *** [obj/default/piano.o] Error 1
+22:50:26 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:20: warning: unused variable 'ps2' [-Wunused-variable]
+     alt_up_ps2_dev ps2;
+                    ^
+make: *** [obj/default/piano.o] Error 1
+23:16:50 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:9: warning: unused variable 'ps2' [-Wunused-variable]
+     int ps2;
+         ^
+make: *** [obj/default/piano.o] Error 1
+23:16:51 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: error: expected expression before 'alt_up_ps2_dev'
+     alt_up_ps2_init(alt_up_ps2_dev * ps2);
+                     ^
+piano.c:25:35: error: expected expression before 'alt_up_ps2_dev'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+                                   ^
+piano.c:25:9: error: too few arguments to function 'alt_up_ps2_read_data_byte'
+         alt_up_ps2_read_data_byte(alt_up_ps2_dev * ps2, unsigned char *byte);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: declared here
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:20:9: warning: unused variable 'ps2' [-Wunused-variable]
+     int ps2;
+         ^
+make: *** [obj/default/piano.o] Error 1
+23:17:36 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:40: error: expected expression before 'unsigned'
+         alt_up_ps2_read_data_byte(ps2, unsigned char *byte);
+                                        ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, unsigned char *byte);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+make: *** [obj/default/piano.o] Error 1
+23:17:37 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:40: error: expected expression before 'unsigned'
+         alt_up_ps2_read_data_byte(ps2, unsigned char *byte);
+                                        ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, unsigned char *byte);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:18: warning: comparison between pointer and integer
+         if (byte == "w")
+                  ^
+piano.c:26:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+make: *** [obj/default/piano.o] Error 1
+23:18:59 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:25:40: warning: passing argument 2 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                        ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'unsigned char *' but argument is of type 'unsigned char'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:14: error: 'byte' undeclared (first use in this function)
+         if (&byte == "w")
+              ^
+piano.c:26:14: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+make: *** [obj/default/piano.o] Error 1
+23:19:00 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:25:40: warning: passing argument 2 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                        ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'unsigned char *' but argument is of type 'unsigned char'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:14: error: 'byte' undeclared (first use in this function)
+         if (&byte == "w")
+              ^
+piano.c:26:14: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+make: *** [obj/default/piano.o] Error 1
+23:19:16 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:25:40: warning: passing argument 2 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                        ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'unsigned char *' but argument is of type 'unsigned char'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:20: warning: comparison between pointer and integer
+         if (psChar == "w")
+                    ^
+piano.c:26:20: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr("state reset");
+             ^
+piano.c:25:9: warning: 'psChar' is used uninitialized in this function [-Wuninitialized]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+         ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:19:21 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:20:36 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:25:40: warning: passing argument 2 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+                                        ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'unsigned char *' but argument is of type 'unsigned char'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:20: warning: comparison between pointer and integer
+         if (psChar != "")
+                    ^
+piano.c:26:20: warning: comparison with string literal results in unspecified behavior [-Waddress]
+piano.c:28:13: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+             alt_putstr(psChar);
+             ^
+piano.c:25:9: warning: 'psChar' is used uninitialized in this function [-Wuninitialized]
+         alt_up_ps2_read_data_byte(ps2, psChar);
+         ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:20:40 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:21:23 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:21: warning: passing argument 1 of 'alt_up_ps2_init' makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_init(ps2);
+                     ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+piano.c:25:35: warning: passing argument 1 of 'alt_up_ps2_read_data_byte' makes pointer from integer without a cast [-Wint-conversion]
+         alt_up_ps2_read_data_byte(ps2, &psChar);
+                                   ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:140:5: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'int'
+ int alt_up_ps2_read_data_byte(alt_up_ps2_dev *ps2, unsigned char *byte);
+     ^
+piano.c:26:20: warning: comparison between pointer and integer
+         if (psChar != "")
+                    ^
+piano.c:26:20: warning: comparison with string literal results in unspecified behavior [-Waddress]
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:21:27 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
