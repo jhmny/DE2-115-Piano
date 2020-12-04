@@ -14,15 +14,15 @@
 #include "altera_up_ps2_keyboard.h"
 #include "sys/alt_dev.h"
 
-void PS2_Contoller();
-
+volatile int * PS2_ptr = (int *) PS2_0_BASE;
 int main()
 {
     alt_putstr("program start");
-    alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+    alt_up_ps2_dev *ps2S;  //set type to keyboard
 
-    unsigned char psChar;
-    //alt_up_ps2_init(&ps2S); //enables interupts
+	alt_up_ps2_init(ps2S);
+
+    char psChar;
     alt_putstr("before while loop");
     while (1) //infinite while loop to wait for ints && IORD_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE) == 0b01
     {
@@ -37,6 +37,3 @@ int main()
     return 0;
 };
 
-//showa time
-//swag
-//oh yeah

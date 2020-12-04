@@ -21,7 +21,7 @@ Archive member included to satisfy reference by file (symbol)
 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
                               ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
-                              ../piano_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_up_ps2_init)
+                              obj/default/piano.o (alt_up_ps2_init)
 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
                               ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
 ../piano_bsp/\libhal_bsp.a(alt_close.o)
@@ -237,7 +237,7 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
                 0x0000000000000248                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
                 0x0000000000000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
 
-.text           0x0000000000000248     0x5a50
+.text           0x0000000000000248     0x5a14
                 [!provide]                        PROVIDE (stext, ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -284,278 +284,278 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000000000248       0x4c ../piano_bsp//obj/HAL/src/crt0.o
                 0x0000000000000248                _start
- .text          0x0000000000000294       0xb8 obj/default/piano.o
+ .text          0x0000000000000294       0x7c obj/default/piano.o
                 0x0000000000000294                main
- .text          0x000000000000034c       0xec ../piano_bsp/\libhal_bsp.a(alt_load.o)
-                0x00000000000003b4                alt_load
- .text          0x0000000000000438       0x6c ../piano_bsp/\libhal_bsp.a(alt_main.o)
-                0x0000000000000438                alt_main
- .text          0x00000000000004a4       0x3c ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
-                0x00000000000004a4                alt_putstr
- .text          0x00000000000004e0      0x100 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x0000000000000514                alt_irq_init
-                0x000000000000054c                alt_sys_init
- .text          0x00000000000005e0      0x164 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
-                0x00000000000005e0                altera_avalon_jtag_uart_read_fd
-                0x0000000000000640                altera_avalon_jtag_uart_write_fd
-                0x00000000000006a0                altera_avalon_jtag_uart_close_fd
-                0x00000000000006f0                altera_avalon_jtag_uart_ioctl_fd
- .text          0x0000000000000744      0x3cc ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
-                0x0000000000000744                altera_avalon_jtag_uart_init
-                0x0000000000000aa8                altera_avalon_jtag_uart_close
- .text          0x0000000000000b10       0xf0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
-                0x0000000000000b10                altera_avalon_jtag_uart_ioctl
- .text          0x0000000000000c00      0x21c ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
-                0x0000000000000c00                altera_avalon_jtag_uart_read
- .text          0x0000000000000e1c      0x224 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                0x0000000000000e1c                altera_avalon_jtag_uart_write
- .text          0x0000000000001040       0xf0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
-                0x00000000000010bc                alt_avalon_timer_sc_init
- .text          0x0000000000001130      0x6b0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
-                0x0000000000001130                read_RI_bit
-                0x0000000000001164                read_RE_bit
-                0x0000000000001194                read_CE_bit
-                0x00000000000011c8                read_num_bytes_available
-                0x00000000000011f8                read_data_valid
-                0x000000000000122c                read_data_byte
-                0x0000000000001258                alt_up_ps2_init
-                0x0000000000001320                alt_up_ps2_enable_read_interrupt
-                0x000000000000137c                alt_up_ps2_disable_read_interrupt
-                0x00000000000013dc                alt_up_ps2_write_data_byte
-                0x0000000000001450                alt_up_ps2_wait_for_ack
-                0x00000000000014b8                alt_up_ps2_write_data_byte_with_ack
-                0x000000000000151c                alt_up_ps2_read_data_byte_timeout
-                0x00000000000015b8                alt_up_ps2_read_data_byte
-                0x0000000000001628                alt_up_ps2_clear_fifo
-                0x0000000000001680                alt_up_ps2_read_fd
-                0x000000000000170c                alt_up_ps2_write_fd
-                0x00000000000017a4                alt_up_ps2_open_dev
- .text          0x00000000000017e0      0x12c ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
-                0x00000000000017e0                alt_alarm_start
- .text          0x000000000000190c      0x10c ../piano_bsp/\libhal_bsp.a(alt_close.o)
-                0x0000000000001948                close
- .text          0x0000000000001a18       0x48 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x0000000000001a18                alt_dcache_flush_all
- .text          0x0000000000001a60       0x2c ../piano_bsp/\libhal_bsp.a(alt_dev.o)
- .text          0x0000000000001a8c       0xe0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
-                0x0000000000001ac8                alt_dev_llist_insert
- .text          0x0000000000001b6c        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
- .text          0x0000000000001b6c       0x90 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
-                0x0000000000001b6c                alt_find_dev
- .text          0x0000000000001bfc       0x34 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                0x0000000000001bfc                alt_icache_flush_all
- .text          0x0000000000001c30      0x140 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
-                0x0000000000001cf4                alt_io_redirect
- .text          0x0000000000001d70      0x180 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
-                0x0000000000001d70                alt_irq_register
- .text          0x0000000000001ef0        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .text          0x0000000000001ef0      0x254 ../piano_bsp/\libhal_bsp.a(alt_open.o)
-                0x0000000000001ff0                open
- .text          0x0000000000002144       0x64 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
-                0x0000000000002144                alt_release_fd
- .text          0x00000000000021a8      0x1a4 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
-                0x00000000000021a8                alt_alarm_stop
-                0x0000000000002244                alt_tick
- .text          0x000000000000234c       0x24 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x000000000000234c                altera_nios2_gen2_irq_init
- .text          0x0000000000002370      0x108 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
-                0x0000000000002370                alt_find_file
- .text          0x0000000000002478       0xa4 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
-                0x0000000000002478                alt_get_fd
- .text          0x000000000000251c       0x90 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
-                0x000000000000251c                alt_icache_flush
- .text          0x00000000000025ac        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .text          0x00000000000025ac        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .text          0x00000000000025ac        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .text          0x00000000000025ac       0x9c ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x00000000000025ac                alt_exception_cause_generated_bad_addr
- .text          0x0000000000002648        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
- .text.exit     0x0000000000002648       0x38 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
-                0x0000000000002648                exit
- .text          0x0000000000002680        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+ .text          0x0000000000000310       0xec ../piano_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000000378                alt_load
+ .text          0x00000000000003fc       0x6c ../piano_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000003fc                alt_main
+ .text          0x0000000000000468       0x3c ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
+                0x0000000000000468                alt_putstr
+ .text          0x00000000000004a4      0x100 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000000000004d8                alt_irq_init
+                0x0000000000000510                alt_sys_init
+ .text          0x00000000000005a4      0x164 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00000000000005a4                altera_avalon_jtag_uart_read_fd
+                0x0000000000000604                altera_avalon_jtag_uart_write_fd
+                0x0000000000000664                altera_avalon_jtag_uart_close_fd
+                0x00000000000006b4                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x0000000000000708      0x3cc ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x0000000000000708                altera_avalon_jtag_uart_init
+                0x0000000000000a6c                altera_avalon_jtag_uart_close
+ .text          0x0000000000000ad4       0xf0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x0000000000000ad4                altera_avalon_jtag_uart_ioctl
+ .text          0x0000000000000bc4      0x21c ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000000000000bc4                altera_avalon_jtag_uart_read
+ .text          0x0000000000000de0      0x224 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000000000000de0                altera_avalon_jtag_uart_write
+ .text          0x0000000000001004       0xf0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000000001080                alt_avalon_timer_sc_init
+ .text          0x00000000000010f4      0x6b0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+                0x00000000000010f4                read_RI_bit
+                0x0000000000001128                read_RE_bit
+                0x0000000000001158                read_CE_bit
+                0x000000000000118c                read_num_bytes_available
+                0x00000000000011bc                read_data_valid
+                0x00000000000011f0                read_data_byte
+                0x000000000000121c                alt_up_ps2_init
+                0x00000000000012e4                alt_up_ps2_enable_read_interrupt
+                0x0000000000001340                alt_up_ps2_disable_read_interrupt
+                0x00000000000013a0                alt_up_ps2_write_data_byte
+                0x0000000000001414                alt_up_ps2_wait_for_ack
+                0x000000000000147c                alt_up_ps2_write_data_byte_with_ack
+                0x00000000000014e0                alt_up_ps2_read_data_byte_timeout
+                0x000000000000157c                alt_up_ps2_read_data_byte
+                0x00000000000015ec                alt_up_ps2_clear_fifo
+                0x0000000000001644                alt_up_ps2_read_fd
+                0x00000000000016d0                alt_up_ps2_write_fd
+                0x0000000000001768                alt_up_ps2_open_dev
+ .text          0x00000000000017a4      0x12c ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x00000000000017a4                alt_alarm_start
+ .text          0x00000000000018d0      0x10c ../piano_bsp/\libhal_bsp.a(alt_close.o)
+                0x000000000000190c                close
+ .text          0x00000000000019dc       0x48 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000000000019dc                alt_dcache_flush_all
+ .text          0x0000000000001a24       0x2c ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x0000000000001a50       0xe0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0000000000001a8c                alt_dev_llist_insert
+ .text          0x0000000000001b30        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000001b30       0x90 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000000000001b30                alt_find_dev
+ .text          0x0000000000001bc0       0x34 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000001bc0                alt_icache_flush_all
+ .text          0x0000000000001bf4      0x140 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000000000001cb8                alt_io_redirect
+ .text          0x0000000000001d34      0x180 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+                0x0000000000001d34                alt_irq_register
+ .text          0x0000000000001eb4        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000001eb4      0x254 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000000000001fb4                open
+ .text          0x0000000000002108       0x64 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000000000002108                alt_release_fd
+ .text          0x000000000000216c      0x1a4 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000000000000216c                alt_alarm_stop
+                0x0000000000002208                alt_tick
+ .text          0x0000000000002310       0x24 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000002310                altera_nios2_gen2_irq_init
+ .text          0x0000000000002334      0x108 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x0000000000002334                alt_find_file
+ .text          0x000000000000243c       0xa4 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x000000000000243c                alt_get_fd
+ .text          0x00000000000024e0       0x90 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x00000000000024e0                alt_icache_flush
+ .text          0x0000000000002570        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000000002570        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000000002570        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000000002570       0x9c ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000002570                alt_exception_cause_generated_bad_addr
+ .text          0x000000000000260c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .text.exit     0x000000000000260c       0x38 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                0x000000000000260c                exit
+ .text          0x0000000000002644        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
  .text._fputs_r
-                0x0000000000002680       0x9c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
-                0x0000000000002680                _fputs_r
- .text.fputs    0x000000000000271c       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
-                0x000000000000271c                fputs
- .text          0x0000000000002734        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
+                0x0000000000002644       0x9c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+                0x0000000000002644                _fputs_r
+ .text.fputs    0x00000000000026e0       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+                0x00000000000026e0                fputs
+ .text          0x00000000000026f8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
  .text.__sfvwrite_r
-                0x0000000000002734      0x4bc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
-                0x0000000000002734                __sfvwrite_r
- .text          0x0000000000002bf0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
- .text          0x0000000000002bf0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
- .text          0x0000000000002bf0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x00000000000026f8      0x4bc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
+                0x00000000000026f8                __sfvwrite_r
+ .text          0x0000000000002bb4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .text          0x0000000000002bb4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .text          0x0000000000002bb4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
  .text._malloc_r
-                0x0000000000002bf0      0x80c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000002bf0                _malloc_r
- .text          0x00000000000033fc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
- .text.memchr   0x00000000000033fc       0xe4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
-                0x00000000000033fc                memchr
- .text          0x00000000000034e0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
- .text.memcmp   0x00000000000034e0       0x7c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
-                0x00000000000034e0                memcmp
- .text          0x000000000000355c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
- .text.memcpy   0x000000000000355c      0x148 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
-                0x000000000000355c                memcpy
- .text          0x00000000000036a4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
- .text.memmove  0x00000000000036a4      0x15c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
-                0x00000000000036a4                memmove
- .text          0x0000000000003800        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
+                0x0000000000002bb4      0x80c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000002bb4                _malloc_r
+ .text          0x00000000000033c0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
+ .text.memchr   0x00000000000033c0       0xe4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
+                0x00000000000033c0                memchr
+ .text          0x00000000000034a4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .text.memcmp   0x00000000000034a4       0x7c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                0x00000000000034a4                memcmp
+ .text          0x0000000000003520        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000003520      0x148 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                0x0000000000003520                memcpy
+ .text          0x0000000000003668        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
+ .text.memmove  0x0000000000003668      0x15c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
+                0x0000000000003668                memmove
+ .text          0x00000000000037c4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
  .text._realloc_r
-                0x0000000000003800      0x564 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
-                0x0000000000003800                _realloc_r
- .text          0x0000000000003d64        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
- .text._sbrk_r  0x0000000000003d64       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
-                0x0000000000003d64                _sbrk_r
- .text          0x0000000000003db8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
- .text.strlen   0x0000000000003db8       0x98 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
-                0x0000000000003db8                strlen
- .text          0x0000000000003e50        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
+                0x00000000000037c4      0x564 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
+                0x00000000000037c4                _realloc_r
+ .text          0x0000000000003d28        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000000000003d28       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
+                0x0000000000003d28                _sbrk_r
+ .text          0x0000000000003d7c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000003d7c       0x98 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                0x0000000000003d7c                strlen
+ .text          0x0000000000003e14        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
  .text.__swsetup_r
-                0x0000000000003e50      0x154 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
-                0x0000000000003e50                __swsetup_r
- .text          0x0000000000003fa4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                0x0000000000003e14      0x154 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
+                0x0000000000003e14                __swsetup_r
+ .text          0x0000000000003f68        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x0000000000003fa4      0x180 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
-                0x0000000000003fa4                __call_exitprocs
- .text          0x0000000000004124        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+                0x0000000000003f68      0x180 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                0x0000000000003f68                __call_exitprocs
+ .text          0x00000000000040e8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
  .text.__sflush_r
-                0x0000000000004124      0x21c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
-                0x0000000000004124                __sflush_r
+                0x00000000000040e8      0x21c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+                0x00000000000040e8                __sflush_r
  .text._fflush_r
-                0x0000000000004340       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
-                0x0000000000004340                _fflush_r
- .text.fflush   0x000000000000439c       0x30 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
-                0x000000000000439c                fflush
- .text          0x00000000000043cc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004304       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+                0x0000000000004304                _fflush_r
+ .text.fflush   0x0000000000004360       0x30 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+                0x0000000000004360                fflush
+ .text          0x0000000000004390        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
  .text.__fp_unlock
-                0x00000000000043cc        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004390        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x00000000000043d4        0xc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x00000000000043d4                _cleanup_r
+                0x0000000000004398        0xc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004398                _cleanup_r
  .text.__sinit.part.1
-                0x00000000000043e0      0x19c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000043a4      0x19c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
  .text.__fp_lock
-                0x000000000000457c        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004540        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x0000000000004584       0x68 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x0000000000004584                __sfmoreglue
- .text.__sfp    0x00000000000045ec      0x118 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x00000000000045ec                __sfp
+                0x0000000000004548       0x68 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004548                __sfmoreglue
+ .text.__sfp    0x00000000000045b0      0x118 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000045b0                __sfp
  .text._cleanup
-                0x0000000000004704       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x0000000000004704                _cleanup
- .text.__sinit  0x000000000000471c       0x10 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x000000000000471c                __sinit
+                0x00000000000046c8       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000046c8                _cleanup
+ .text.__sinit  0x00000000000046e0       0x10 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000046e0                __sinit
  .text.__sfp_lock_acquire
-                0x000000000000472c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x000000000000472c                __sfp_lock_acquire
+                0x00000000000046f0        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000046f0                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x0000000000004730        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x0000000000004730                __sfp_lock_release
+                0x00000000000046f4        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000046f4                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x0000000000004734        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x0000000000004734                __sinit_lock_acquire
+                0x00000000000046f8        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000046f8                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x0000000000004738        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x0000000000004738                __sinit_lock_release
+                0x00000000000046fc        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x00000000000046fc                __sinit_lock_release
  .text.__fp_lock_all
-                0x000000000000473c       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x000000000000473c                __fp_lock_all
+                0x0000000000004700       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004700                __fp_lock_all
  .text.__fp_unlock_all
-                0x0000000000004754       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
-                0x0000000000004754                __fp_unlock_all
- .text          0x000000000000476c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+                0x0000000000004718       0x18 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+                0x0000000000004718                __fp_unlock_all
+ .text          0x0000000000004730        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
  .text._malloc_trim_r
-                0x000000000000476c      0x124 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
-                0x000000000000476c                _malloc_trim_r
- .text._free_r  0x0000000000004890      0x310 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
-                0x0000000000004890                _free_r
- .text          0x0000000000004ba0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
- .text._fwalk   0x0000000000004ba0       0xc4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
-                0x0000000000004ba0                _fwalk
+                0x0000000000004730      0x124 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+                0x0000000000004730                _malloc_trim_r
+ .text._free_r  0x0000000000004854      0x310 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+                0x0000000000004854                _free_r
+ .text          0x0000000000004b64        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+ .text._fwalk   0x0000000000004b64       0xc4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+                0x0000000000004b64                _fwalk
  .text._fwalk_reent
-                0x0000000000004c64       0xc4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
-                0x0000000000004c64                _fwalk_reent
- .text          0x0000000000004d28        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
+                0x0000000000004c28       0xc4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+                0x0000000000004c28                _fwalk_reent
+ .text          0x0000000000004cec        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
  .text.__smakebuf_r
-                0x0000000000004d28      0x1bc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
-                0x0000000000004d28                __smakebuf_r
- .text          0x0000000000004ee4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
- .text.memset   0x0000000000004ee4      0x128 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
-                0x0000000000004ee4                memset
- .text          0x000000000000500c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
- .text.__sread  0x000000000000500c       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
-                0x000000000000500c                __sread
+                0x0000000000004cec      0x1bc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
+                0x0000000000004cec                __smakebuf_r
+ .text          0x0000000000004ea8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
+ .text.memset   0x0000000000004ea8      0x128 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
+                0x0000000000004ea8                memset
+ .text          0x0000000000004fd0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+ .text.__sread  0x0000000000004fd0       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000000000004fd0                __sread
  .text.__seofread
-                0x0000000000005060        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
-                0x0000000000005060                __seofread
+                0x0000000000005024        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000000000005024                __seofread
  .text.__swrite
-                0x0000000000005068       0x7c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
-                0x0000000000005068                __swrite
- .text.__sseek  0x00000000000050e4       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
-                0x00000000000050e4                __sseek
+                0x000000000000502c       0x7c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+                0x000000000000502c                __swrite
+ .text.__sseek  0x00000000000050a8       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+                0x00000000000050a8                __sseek
  .text.__sclose
-                0x0000000000005140        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
-                0x0000000000005140                __sclose
- .text          0x0000000000005148        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
+                0x0000000000005104        0x8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000000000005104                __sclose
+ .text          0x000000000000510c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
  .text._write_r
-                0x0000000000005148       0x60 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
-                0x0000000000005148                _write_r
- .text          0x00000000000051a8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
+                0x000000000000510c       0x60 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
+                0x000000000000510c                _write_r
+ .text          0x000000000000516c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
  .text._close_r
-                0x00000000000051a8       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
-                0x00000000000051a8                _close_r
- .text          0x00000000000051fc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+                0x000000000000516c       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
+                0x000000000000516c                _close_r
+ .text          0x00000000000051c0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
  .text._fclose_r
-                0x00000000000051fc       0xf0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
-                0x00000000000051fc                _fclose_r
- .text.fclose   0x00000000000052ec       0x14 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
-                0x00000000000052ec                fclose
- .text          0x0000000000005300        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
+                0x00000000000051c0       0xf0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+                0x00000000000051c0                _fclose_r
+ .text.fclose   0x00000000000052b0       0x14 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+                0x00000000000052b0                fclose
+ .text          0x00000000000052c4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
  .text._fstat_r
-                0x0000000000005300       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
-                0x0000000000005300                _fstat_r
- .text          0x000000000000535c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
+                0x00000000000052c4       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
+                0x00000000000052c4                _fstat_r
+ .text          0x0000000000005320        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
  .text._isatty_r
-                0x000000000000535c       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
-                0x000000000000535c                _isatty_r
- .text          0x00000000000053b0        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
+                0x0000000000005320       0x54 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
+                0x0000000000005320                _isatty_r
+ .text          0x0000000000005374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
  .text._lseek_r
-                0x00000000000053b0       0x60 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
-                0x00000000000053b0                _lseek_r
- .text          0x0000000000005410        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
- .text._read_r  0x0000000000005410       0x60 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
-                0x0000000000005410                _read_r
- .text          0x0000000000005470      0x1b4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
-                0x0000000000005470                __divsi3
-                0x00000000000054f4                __modsi3
-                0x0000000000005568                __udivsi3
-                0x00000000000055cc                __umodsi3
- .text          0x0000000000005624       0x34 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
-                0x0000000000005624                _exit
- .text          0x0000000000005658       0xec ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
-                0x0000000000005694                fstat
- .text          0x0000000000005744       0xe0 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
-                0x0000000000005780                isatty
- .text          0x0000000000005824      0x110 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
-                0x0000000000005860                lseek
- .text          0x0000000000005934       0x48 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
-                0x0000000000005934                __malloc_lock
-                0x0000000000005958                __malloc_unlock
- .text          0x000000000000597c      0x138 ../piano_bsp/\libhal_bsp.a(alt_read.o)
-                0x00000000000059b8                read
- .text          0x0000000000005ab4       0xb0 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
-                0x0000000000005ab4                sbrk
- .text          0x0000000000005b64      0x134 ../piano_bsp/\libhal_bsp.a(alt_write.o)
-                0x0000000000005ba0                write
+                0x0000000000005374       0x60 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
+                0x0000000000005374                _lseek_r
+ .text          0x00000000000053d4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
+ .text._read_r  0x00000000000053d4       0x60 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
+                0x00000000000053d4                _read_r
+ .text          0x0000000000005434      0x1b4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
+                0x0000000000005434                __divsi3
+                0x00000000000054b8                __modsi3
+                0x000000000000552c                __udivsi3
+                0x0000000000005590                __umodsi3
+ .text          0x00000000000055e8       0x34 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00000000000055e8                _exit
+ .text          0x000000000000561c       0xec ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
+                0x0000000000005658                fstat
+ .text          0x0000000000005708       0xe0 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
+                0x0000000000005744                isatty
+ .text          0x00000000000057e8      0x110 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
+                0x0000000000005824                lseek
+ .text          0x00000000000058f8       0x48 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+                0x00000000000058f8                __malloc_lock
+                0x000000000000591c                __malloc_unlock
+ .text          0x0000000000005940      0x138 ../piano_bsp/\libhal_bsp.a(alt_read.o)
+                0x000000000000597c                read
+ .text          0x0000000000005a78       0xb0 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
+                0x0000000000005a78                sbrk
+ .text          0x0000000000005b28      0x134 ../piano_bsp/\libhal_bsp.a(alt_write.o)
+                0x0000000000005b64                write
  *(.gnu.warning.*)
  *(.fini)
                 [!provide]                        PROVIDE (__etext, ABSOLUTE (.))
                 [!provide]                        PROVIDE (_etext, ABSOLUTE (.))
                 [!provide]                        PROVIDE (etext, ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x0000000000005c98                . = ALIGN (0x4)
+                0x0000000000005c5c                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__preinit_array_start, ABSOLUTE (.))
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end, ABSOLUTE (.))
@@ -577,277 +577,277 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  *(SORT(.dtors.*))
                 [!provide]                        PROVIDE (__DTOR_END__, ABSOLUTE (.))
  *(.jcr)
-                0x0000000000005c98                . = ALIGN (0x4)
+                0x0000000000005c5c                . = ALIGN (0x4)
 
-.rodata         0x0000000000005c98       0xa4
-                0x0000000000005c98                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
-                0x0000000000005c98                . = ALIGN (0x4)
+.rodata         0x0000000000005c5c       0xbc
+                0x0000000000005c5c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0000000000005c5c                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000005c98       0x30 obj/default/piano.o
- .rodata        0x0000000000005cc8       0x11 ../piano_bsp/\libhal_bsp.a(alt_main.o)
- *fill*         0x0000000000005cd9        0x3 
- .rodata        0x0000000000005cdc       0x4f ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
- *fill*         0x0000000000005d2b        0x1 
- .rodata        0x0000000000005d2c        0xa ../piano_bsp/\libhal_bsp.a(alt_dev.o)
- *fill*         0x0000000000005d36        0x2 
+ .rodata        0x0000000000005c5c       0x48 obj/default/piano.o
+ .rodata        0x0000000000005ca4       0x11 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ *fill*         0x0000000000005cb5        0x3 
+ .rodata        0x0000000000005cb8       0x4f ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ *fill*         0x0000000000005d07        0x1 
+ .rodata        0x0000000000005d08        0xa ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ *fill*         0x0000000000005d12        0x2 
  .rodata.str1.4
-                0x0000000000005d38        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                0x0000000000005d14        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
                                           0x2 (size before relaxing)
  *(.rodata1)
-                0x0000000000005d3c                . = ALIGN (0x4)
-                0x0000000000005d3c                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
-                0x0000000000005c98                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+                0x0000000000005d18                . = ALIGN (0x4)
+                0x0000000000005d18                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0000000000005c5c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
 
-.rwdata         0x0000000000005d3c     0x1b04 load address 0x0000000000007840
-                0x0000000000005d3c                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
-                0x0000000000005d3c                . = ALIGN (0x4)
+.rwdata         0x0000000000005d18     0x1b04 load address 0x000000000000781c
+                0x0000000000005d18                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000005d18                . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000000005d3c        0x0 ../piano_bsp//obj/HAL/src/crt0.o
- .data          0x0000000000005d3c        0x0 obj/default/piano.o
- .data          0x0000000000005d3c        0x0 ../piano_bsp/\libhal_bsp.a(alt_load.o)
- .data          0x0000000000005d3c        0x0 ../piano_bsp/\libhal_bsp.a(alt_main.o)
- .data          0x0000000000005d3c        0x0 ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
- .data          0x0000000000005d3c     0x10f8 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(alt_close.o)
- .data          0x0000000000006e34        0x0 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x0000000000006e34      0x1a8 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
-                0x0000000000006e34                alt_dev_null
-                0x0000000000006e5c                alt_fd_list
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_open.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .data          0x0000000000006fdc        0x0 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .data          0x0000000000006fdc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
- .data          0x0000000000006fdc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
- .data          0x0000000000006fdc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
- .data          0x0000000000006fdc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .data          0x0000000000005d18        0x0 ../piano_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000005d18        0x0 obj/default/piano.o
+ .data          0x0000000000005d18        0x0 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000005d18        0x0 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000005d18        0x0 ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
+ .data          0x0000000000005d18     0x10f8 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x0000000000006e10        0x0 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000006e10      0x1a8 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000006e10                alt_dev_null
+                0x0000000000006e38                alt_fd_list
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000006fb8        0x0 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000000006fb8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .data          0x0000000000006fb8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+ .data          0x0000000000006fb8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
+ .data          0x0000000000006fb8        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
  .data.impure_data
-                0x0000000000006fdc      0x424 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
- .data          0x0000000000007400        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
- .data          0x0000000000007400        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000006fb8      0x424 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .data          0x00000000000073dc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .data          0x00000000000073dc        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
  .data.__malloc_av_
-                0x0000000000007400      0x408 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000007400                __malloc_av_
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
- .data          0x0000000000007808        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_read.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
- .data          0x0000000000007808        0x0 ../piano_bsp/\libhal_bsp.a(alt_write.o)
-                0x000000000000f808                _gp = ABSOLUTE ((. + 0x8000))
+                0x00000000000073dc      0x408 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x00000000000073dc                __malloc_av_
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
+ .data          0x00000000000077e4        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_read.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .data          0x00000000000077e4        0x0 ../piano_bsp/\libhal_bsp.a(alt_write.o)
+                0x000000000000f7e4                _gp = ABSOLUTE ((. + 0x8000))
                 [!provide]                        PROVIDE (gp, _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x0000000000007808       0x14 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
-                0x0000000000007808                alt_fs_list
-                0x0000000000007810                alt_dev_list
-                0x0000000000007818                alt_max_fd
- .sdata         0x000000000000781c        0x4 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
-                0x000000000000781c                alt_errno
- .sdata         0x0000000000007820        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
-                0x0000000000007820                alt_priority_mask
- .sdata         0x0000000000007824        0x8 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000000000007824                alt_alarm_list
+ .sdata         0x00000000000077e4       0x14 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00000000000077e4                alt_fs_list
+                0x00000000000077ec                alt_dev_list
+                0x00000000000077f4                alt_max_fd
+ .sdata         0x00000000000077f8        0x4 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00000000000077f8                alt_errno
+ .sdata         0x00000000000077fc        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00000000000077fc                alt_priority_mask
+ .sdata         0x0000000000007800        0x8 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000007800                alt_alarm_list
  .sdata._global_impure_ptr
-                0x000000000000782c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
-                0x000000000000782c                _global_impure_ptr
+                0x0000000000007808        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                0x0000000000007808                _global_impure_ptr
  .sdata._impure_ptr
-                0x0000000000007830        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
-                0x0000000000007830                _impure_ptr
+                0x000000000000780c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                0x000000000000780c                _impure_ptr
  .sdata.__malloc_sbrk_base
-                0x0000000000007834        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000007834                __malloc_sbrk_base
+                0x0000000000007810        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000007810                __malloc_sbrk_base
  .sdata.__malloc_trim_threshold
-                0x0000000000007838        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000007838                __malloc_trim_threshold
- .sdata         0x000000000000783c        0x4 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
+                0x0000000000007814        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000007814                __malloc_trim_threshold
+ .sdata         0x0000000000007818        0x4 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x0000000000007840                . = ALIGN (0x4)
-                0x0000000000007840                _edata = ABSOLUTE (.)
+                0x000000000000781c                . = ALIGN (0x4)
+                0x000000000000781c                _edata = ABSOLUTE (.)
                 [!provide]                        PROVIDE (edata, ABSOLUTE (.))
-                0x0000000000007840                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
-                0x0000000000007840                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+                0x000000000000781c                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x000000000000781c                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
 
-.bss            0x0000000000009344      0x154
-                0x0000000000009344                __bss_start = ABSOLUTE (.)
+.bss            0x0000000000009320      0x154
+                0x0000000000009320                __bss_start = ABSOLUTE (.)
                 [!provide]                        PROVIDE (__sbss_start, ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_start, ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0000000000009344        0xc ../piano_bsp/\libhal_bsp.a(alt_main.o)
-                0x0000000000009344                alt_argc
-                0x0000000000009348                alt_argv
-                0x000000000000934c                alt_envp
- .sbss          0x0000000000009350        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
-                0x0000000000009350                alt_irq_active
- .sbss          0x0000000000009354        0x8 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000000000009354                _alt_tick_rate
-                0x0000000000009358                _alt_nticks
- .sbss          0x000000000000935c        0x4 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x000000000000935c                alt_instruction_exception_handler
- .sbss          0x0000000000009360        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
-                0x0000000000009360                errno
+ .sbss          0x0000000000009320        0xc ../piano_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000009320                alt_argc
+                0x0000000000009324                alt_argv
+                0x0000000000009328                alt_envp
+ .sbss          0x000000000000932c        0x4 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000000000000932c                alt_irq_active
+ .sbss          0x0000000000009330        0x8 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000009330                _alt_tick_rate
+                0x0000000000009334                _alt_nticks
+ .sbss          0x0000000000009338        0x4 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000009338                alt_instruction_exception_handler
+ .sbss          0x000000000000933c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                0x000000000000933c                errno
  .sbss.__malloc_max_total_mem
-                0x0000000000009364        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000009364                __malloc_max_total_mem
+                0x0000000000009340        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000009340                __malloc_max_total_mem
  .sbss.__malloc_max_sbrked_mem
-                0x0000000000009368        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000009368                __malloc_max_sbrked_mem
+                0x0000000000009344        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000009344                __malloc_max_sbrked_mem
  .sbss.__malloc_top_pad
-                0x000000000000936c        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x000000000000936c                __malloc_top_pad
+                0x0000000000009348        0x4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x0000000000009348                __malloc_top_pad
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
                 [!provide]                        PROVIDE (__sbss_end, ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_end, ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000009370        0x0 ../piano_bsp//obj/HAL/src/crt0.o
- .bss           0x0000000000009370        0x0 obj/default/piano.o
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_load.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_main.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_close.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_open.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .bss           0x0000000000009370        0x0 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .bss           0x0000000000009370        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
- .bss           0x0000000000009370        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
- .bss           0x0000000000009370        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
- .bss           0x0000000000009370        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
- .bss           0x0000000000009370        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
- .bss           0x0000000000009370        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp//obj/HAL/src/crt0.o
+ .bss           0x000000000000934c        0x0 obj/default/piano.o
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x000000000000934c        0x0 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x000000000000934c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .bss           0x000000000000934c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+ .bss           0x000000000000934c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
+ .bss           0x000000000000934c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .bss           0x000000000000934c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .bss           0x000000000000934c        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
  .bss.__malloc_current_mallinfo
-                0x0000000000009370       0x28 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
-                0x0000000000009370                __malloc_current_mallinfo
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
- .bss           0x0000000000009398        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_read.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
- .bss           0x0000000000009398        0x0 ../piano_bsp/\libhal_bsp.a(alt_write.o)
+                0x000000000000934c       0x28 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+                0x000000000000934c                __malloc_current_mallinfo
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
+ .bss           0x0000000000009374        0x0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_read.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .bss           0x0000000000009374        0x0 ../piano_bsp/\libhal_bsp.a(alt_write.o)
  *(COMMON)
- COMMON         0x0000000000009398      0x100 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
-                0x0000000000009398                alt_irq
-                0x0000000000009498                . = ALIGN (0x4)
-                0x0000000000009498                __bss_end = ABSOLUTE (.)
+ COMMON         0x0000000000009374      0x100 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000009374                alt_irq
+                0x0000000000009474                . = ALIGN (0x4)
+                0x0000000000009474                __bss_end = ABSOLUTE (.)
 
 .new_sdram_controller_0
-                0x0000000000009498        0x0
+                0x0000000000009474        0x0
                 [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_start, ABSOLUTE (.))
  *(.new_sdram_controller_0 .new_sdram_controller_0. new_sdram_controller_0.*)
-                0x0000000000009498                . = ALIGN (0x4)
+                0x0000000000009474                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_end, ABSOLUTE (.))
-                0x0000000000009498                _end = ABSOLUTE (.)
-                0x0000000000009498                end = ABSOLUTE (.)
-                0x0000000000009498                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000009474                _end = ABSOLUTE (.)
+                0x0000000000009474                end = ABSOLUTE (.)
+                0x0000000000009474                __alt_stack_base = ABSOLUTE (.)
                 [!provide]                        PROVIDE (_alt_partition_new_sdram_controller_0_load_addr, LOADADDR (.new_sdram_controller_0))
 
 .onchip_memory2_0
-                0x0000000008404000        0x0 load address 0x0000000000009498
+                0x0000000008404000        0x0 load address 0x0000000000009474
                 [!provide]                        PROVIDE (_alt_partition_onchip_memory2_0_start, ABSOLUTE (.))
  *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
                 0x0000000008404000                . = ALIGN (0x4)
@@ -1110,81 +1110,81 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x16e04
+.debug_info     0x0000000000000000    0x16e09
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000       0x84 ../piano_bsp//obj/HAL/src/crt0.o
- .debug_info    0x0000000000000084      0x378 obj/default/piano.o
- .debug_info    0x00000000000003fc      0x145 ../piano_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x0000000000000541      0x157 ../piano_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x0000000000000698      0x8a8 ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
- .debug_info    0x0000000000000f40      0x660 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x00000000000015a0      0x52e ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .debug_info    0x0000000000001ace      0x3c3 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .debug_info    0x0000000000001e91      0x280 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .debug_info    0x0000000000002111      0x35b ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .debug_info    0x000000000000246c      0x356 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_info    0x00000000000027c2      0x249 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .debug_info    0x0000000000002a0b      0x7d4 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .debug_info    0x00000000000031df      0x2e2 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .debug_info    0x00000000000034c1      0x321 ../piano_bsp/\libhal_bsp.a(alt_close.o)
- .debug_info    0x00000000000037e2       0xa5 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x0000000000003887      0x49c ../piano_bsp/\libhal_bsp.a(alt_dev.o)
- .debug_info    0x0000000000003d23      0x1a9 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .debug_info    0x0000000000003ecc       0xa6 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_info    0x0000000000003f72      0x2e9 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
- .debug_info    0x000000000000425b       0x92 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x00000000000042ed      0x4a5 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .debug_info    0x0000000000004792      0x329 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
- .debug_info    0x0000000000004abb       0x88 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_info    0x0000000000004b43      0x3bb ../piano_bsp/\libhal_bsp.a(alt_open.o)
- .debug_info    0x0000000000004efe      0x2b0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
- .debug_info    0x00000000000051ae      0x2af ../piano_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_info    0x000000000000545d       0xb8 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_info    0x0000000000005515      0x2e6 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
- .debug_info    0x00000000000057fb      0x310 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
- .debug_info    0x0000000000005b0b       0xdc ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .debug_info    0x0000000000005be7       0x8d ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_info    0x0000000000005c74      0x1a7 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_info    0x0000000000005e1b       0x93 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_info    0x0000000000005eae      0x1e7 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_info    0x0000000000006095      0x8e4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
- .debug_info    0x0000000000006979      0xa41 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
- .debug_info    0x00000000000073ba      0xbb8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
- .debug_info    0x0000000000007f72      0x8a1 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
- .debug_info    0x0000000000008813       0x8a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
- .debug_info    0x000000000000889d      0xd57 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
- .debug_info    0x00000000000095f4      0x132 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
- .debug_info    0x0000000000009726      0x11a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
- .debug_info    0x0000000000009840      0x144 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
- .debug_info    0x0000000000009984      0x13a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
- .debug_info    0x0000000000009abe      0xc6b c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
- .debug_info    0x000000000000a729      0x900 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
- .debug_info    0x000000000000b029       0xe2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
- .debug_info    0x000000000000b10b      0x936 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
- .debug_info    0x000000000000ba41      0x965 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
- .debug_info    0x000000000000c3a6      0xa93 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
- .debug_info    0x000000000000ce39      0xd37 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
- .debug_info    0x000000000000db70      0xbf7 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
- .debug_info    0x000000000000e767      0x9b0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
- .debug_info    0x000000000000f117      0xad8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
- .debug_info    0x000000000000fbef      0x121 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
- .debug_info    0x000000000000fd10      0xb32 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
- .debug_info    0x0000000000010842      0x928 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
- .debug_info    0x000000000001116a      0x8df c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
- .debug_info    0x0000000000011a49      0xa23 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
- .debug_info    0x000000000001246c      0xa5d c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
- .debug_info    0x0000000000012ec9      0x8df c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
- .debug_info    0x00000000000137a8      0x90b c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
- .debug_info    0x00000000000140b3      0x921 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
- .debug_info    0x00000000000149d4      0x2c6 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
- .debug_info    0x0000000000014c9a      0x116 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
- .debug_info    0x0000000000014db0      0x488 ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
- .debug_info    0x0000000000015238      0x48b ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
- .debug_info    0x00000000000156c3      0x352 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
- .debug_info    0x0000000000015a15      0x8b6 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
- .debug_info    0x00000000000162cb      0x4b0 ../piano_bsp/\libhal_bsp.a(alt_read.o)
- .debug_info    0x000000000001677b      0x1d2 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
- .debug_info    0x000000000001694d      0x4b7 ../piano_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x0000000000000084      0x37d obj/default/piano.o
+ .debug_info    0x0000000000000401      0x145 ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000000546      0x157 ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000000000000069d      0x8a8 ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x0000000000000f45      0x660 ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000015a5      0x52e ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x0000000000001ad3      0x3c3 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x0000000000001e96      0x280 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000000000002116      0x35b ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000002471      0x356 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00000000000027c7      0x249 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x0000000000002a10      0x7d4 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_info    0x00000000000031e4      0x2e2 ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x00000000000034c6      0x321 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x00000000000037e7       0xa5 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000000000000388c      0x49c ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000000000003d28      0x1a9 ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x0000000000003ed1       0xa6 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000003f77      0x2e9 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000000000004260       0x92 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000042f2      0x4a5 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000000000004797      0x329 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x0000000000004ac0       0x88 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000004b48      0x3bb ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000000000004f03      0x2b0 ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00000000000051b3      0x2af ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000000000005462       0xb8 ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x000000000000551a      0x2e6 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000000000005800      0x310 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x0000000000005b10       0xdc ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x0000000000005bec       0x8d ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000000000005c79      0x1a7 ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000005e20       0x93 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000000000005eb3      0x1e7 ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x000000000000609a      0x8e4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_info    0x000000000000697e      0xa41 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+ .debug_info    0x00000000000073bf      0xbb8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
+ .debug_info    0x0000000000007f77      0x8a1 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000008818       0x8a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000088a2      0xd57 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+ .debug_info    0x00000000000095f9      0x132 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
+ .debug_info    0x000000000000972b      0x11a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_info    0x0000000000009845      0x144 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000009989      0x13a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
+ .debug_info    0x0000000000009ac3      0xc6b c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
+ .debug_info    0x000000000000a72e      0x900 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
+ .debug_info    0x000000000000b02e       0xe2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_info    0x000000000000b110      0x936 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
+ .debug_info    0x000000000000ba46      0x965 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000000000000c3ab      0xa93 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+ .debug_info    0x000000000000ce3e      0xd37 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+ .debug_info    0x000000000000db75      0xbf7 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+ .debug_info    0x000000000000e76c      0x9b0 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+ .debug_info    0x000000000000f11c      0xad8 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
+ .debug_info    0x000000000000fbf4      0x121 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
+ .debug_info    0x000000000000fd15      0xb32 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+ .debug_info    0x0000000000010847      0x928 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
+ .debug_info    0x000000000001116f      0x8df c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
+ .debug_info    0x0000000000011a4e      0xa23 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+ .debug_info    0x0000000000012471      0xa5d c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
+ .debug_info    0x0000000000012ece      0x8df c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
+ .debug_info    0x00000000000137ad      0x90b c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
+ .debug_info    0x00000000000140b8      0x921 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
+ .debug_info    0x00000000000149d9      0x2c6 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000000000014c9f      0x116 ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x0000000000014db5      0x488 ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
+ .debug_info    0x000000000001523d      0x48b ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
+ .debug_info    0x00000000000156c8      0x352 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
+ .debug_info    0x0000000000015a1a      0x8b6 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_info    0x00000000000162d0      0x4b0 ../piano_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_info    0x0000000000016780      0x1d2 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_info    0x0000000000016952      0x4b7 ../piano_bsp/\libhal_bsp.a(alt_write.o)
 
 .debug_abbrev   0x0000000000000000     0x5fe7
  *(.debug_abbrev)
@@ -1262,81 +1262,81 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  .debug_abbrev  0x0000000000005d9b      0x119 ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
  .debug_abbrev  0x0000000000005eb4      0x133 ../piano_bsp/\libhal_bsp.a(alt_write.o)
 
-.debug_line     0x0000000000000000     0x6a41
+.debug_line     0x0000000000000000     0x6a40
  *(.debug_line)
  .debug_line    0x0000000000000000       0x72 ../piano_bsp//obj/HAL/src/crt0.o
- .debug_line    0x0000000000000072      0x100 obj/default/piano.o
- .debug_line    0x0000000000000172       0x8e ../piano_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x0000000000000200       0xcb ../piano_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x00000000000002cb      0x11d ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
- .debug_line    0x00000000000003e8      0x1cd ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x00000000000005b5      0x12f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .debug_line    0x00000000000006e4      0x19f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .debug_line    0x0000000000000883      0x131 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .debug_line    0x00000000000009b4      0x185 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .debug_line    0x0000000000000b39      0x184 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_line    0x0000000000000cbd      0x113 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .debug_line    0x0000000000000dd0      0x1a5 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .debug_line    0x0000000000000f75      0x10d ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .debug_line    0x0000000000001082      0x165 ../piano_bsp/\libhal_bsp.a(alt_close.o)
- .debug_line    0x00000000000011e7       0x61 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x0000000000001248       0xf8 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
- .debug_line    0x0000000000001340       0xcf ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .debug_line    0x000000000000140f       0x51 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_line    0x0000000000001460       0xb5 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
- .debug_line    0x0000000000001515       0x50 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x0000000000001565      0x133 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .debug_line    0x0000000000001698      0x155 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
- .debug_line    0x00000000000017ed       0x50 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_line    0x000000000000183d      0x128 ../piano_bsp/\libhal_bsp.a(alt_open.o)
- .debug_line    0x0000000000001965       0xae ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
- .debug_line    0x0000000000001a13      0x113 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_line    0x0000000000001b26       0x8d ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_line    0x0000000000001bb3       0xd1 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
- .debug_line    0x0000000000001c84       0xd4 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
- .debug_line    0x0000000000001d58       0x81 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .debug_line    0x0000000000001dd9       0x6b ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_line    0x0000000000001e44       0xcd ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_line    0x0000000000001f11       0xb3 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_line    0x0000000000001fc4       0xba ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_line    0x000000000000207e      0x1f9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
- .debug_line    0x0000000000002277      0x238 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
- .debug_line    0x00000000000024af      0x342 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
- .debug_line    0x00000000000027f1      0x15d c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
- .debug_line    0x000000000000294e       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
- .debug_line    0x00000000000029aa      0x3f9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
- .debug_line    0x0000000000002da3      0x18a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
- .debug_line    0x0000000000002f2d      0x173 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
- .debug_line    0x00000000000030a0      0x189 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
- .debug_line    0x0000000000003229      0x18a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
- .debug_line    0x00000000000033b3      0x2f2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
- .debug_line    0x00000000000036a5      0x1e6 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
- .debug_line    0x000000000000388b      0x16c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
- .debug_line    0x00000000000039f7      0x263 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
- .debug_line    0x0000000000003c5a      0x237 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
- .debug_line    0x0000000000003e91      0x2e7 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
- .debug_line    0x0000000000004178      0x36f c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
- .debug_line    0x00000000000044e7      0x2f4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
- .debug_line    0x00000000000047db      0x237 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
- .debug_line    0x0000000000004a12      0x271 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
- .debug_line    0x0000000000004c83      0x18c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
- .debug_line    0x0000000000004e0f      0x267 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
- .debug_line    0x0000000000005076      0x1f3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
- .debug_line    0x0000000000005269      0x1f3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
- .debug_line    0x000000000000545c      0x236 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
- .debug_line    0x0000000000005692      0x1fc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
- .debug_line    0x000000000000588e      0x1f4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
- .debug_line    0x0000000000005a82      0x1f3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
- .debug_line    0x0000000000005c75      0x1f2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
- .debug_line    0x0000000000005e67      0x102 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
- .debug_line    0x0000000000005f69       0xad ../piano_bsp/\libhal_bsp.a(alt_exit.o)
- .debug_line    0x0000000000006016      0x15e ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
- .debug_line    0x0000000000006174      0x162 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
- .debug_line    0x00000000000062d6      0x163 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
- .debug_line    0x0000000000006439      0x122 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
- .debug_line    0x000000000000655b      0x1dc ../piano_bsp/\libhal_bsp.a(alt_read.o)
- .debug_line    0x0000000000006737      0x12f ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
- .debug_line    0x0000000000006866      0x1db ../piano_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000000000000072       0xff obj/default/piano.o
+ .debug_line    0x0000000000000171       0x8e ../piano_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000000000001ff       0xcb ../piano_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000000000002ca      0x11d ../piano_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x00000000000003e7      0x1cd ../piano_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000000000005b4      0x12f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x00000000000006e3      0x19f ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x0000000000000882      0x131 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x00000000000009b3      0x185 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000000b38      0x184 ../piano_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000000cbc      0x113 ../piano_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x0000000000000dcf      0x1a5 ../piano_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_line    0x0000000000000f74      0x10d ../piano_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x0000000000001081      0x165 ../piano_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000000000011e6       0x61 ../piano_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000001247       0xf8 ../piano_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x000000000000133f       0xcf ../piano_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x000000000000140e       0x51 ../piano_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x000000000000145f       0xb5 ../piano_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000000000001514       0x50 ../piano_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000001564      0x133 ../piano_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000000000001697      0x155 ../piano_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x00000000000017ec       0x50 ../piano_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x000000000000183c      0x128 ../piano_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000000000001964       0xae ../piano_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000000000001a12      0x113 ../piano_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000001b25       0x8d ../piano_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000001bb2       0xd1 ../piano_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x0000000000001c83       0xd4 ../piano_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000000000001d57       0x81 ../piano_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000000000001dd8       0x6b ../piano_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000001e43       0xcd ../piano_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000001f10       0xb3 ../piano_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000001fc3       0xba ../piano_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x000000000000207d      0x1f9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000002276      0x238 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fputs.o)
+ .debug_line    0x00000000000024ae      0x342 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fvwrite.o)
+ .debug_line    0x00000000000027f0      0x15d c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_line    0x000000000000294d       0x5c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_line    0x00000000000029a9      0x3f9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-mallocr.o)
+ .debug_line    0x0000000000002da2      0x18a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memchr.o)
+ .debug_line    0x0000000000002f2c      0x173 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_line    0x000000000000309f      0x189 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000003228      0x18a c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memmove.o)
+ .debug_line    0x00000000000033b2      0x2f2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-reallocr.o)
+ .debug_line    0x00000000000036a4      0x1e6 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-sbrkr.o)
+ .debug_line    0x000000000000388a      0x16c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000039f6      0x263 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-wsetup.o)
+ .debug_line    0x0000000000003c59      0x237 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000003e90      0x2e7 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fflush.o)
+ .debug_line    0x0000000000004177      0x36f c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-findfp.o)
+ .debug_line    0x00000000000044e6      0x2f4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-freer.o)
+ .debug_line    0x00000000000047da      0x237 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fwalk.o)
+ .debug_line    0x0000000000004a11      0x271 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-makebuf.o)
+ .debug_line    0x0000000000004c82      0x18c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memset.o)
+ .debug_line    0x0000000000004e0e      0x267 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-stdio.o)
+ .debug_line    0x0000000000005075      0x1f3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-writer.o)
+ .debug_line    0x0000000000005268      0x1f3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(closer.o)
+ .debug_line    0x000000000000545b      0x236 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fclose.o)
+ .debug_line    0x0000000000005691      0x1fc c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-fstatr.o)
+ .debug_line    0x000000000000588d      0x1f4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-isattyr.o)
+ .debug_line    0x0000000000005a81      0x1f3 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-lseekr.o)
+ .debug_line    0x0000000000005c74      0x1f2 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-readr.o)
+ .debug_line    0x0000000000005e66      0x102 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000005f68       0xad ../piano_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x0000000000006015      0x15e ../piano_bsp/\libhal_bsp.a(alt_fstat.o)
+ .debug_line    0x0000000000006173      0x162 ../piano_bsp/\libhal_bsp.a(alt_isatty.o)
+ .debug_line    0x00000000000062d5      0x163 ../piano_bsp/\libhal_bsp.a(alt_lseek.o)
+ .debug_line    0x0000000000006438      0x122 ../piano_bsp/\libhal_bsp.a(alt_malloc_lock.o)
+ .debug_line    0x000000000000655a      0x1dc ../piano_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_line    0x0000000000006736      0x12f ../piano_bsp/\libhal_bsp.a(alt_sbrk.o)
+ .debug_line    0x0000000000006865      0x1db ../piano_bsp/\libhal_bsp.a(alt_write.o)
 
 .debug_frame    0x0000000000000000     0x1718
  *(.debug_frame)
@@ -1604,7 +1604,7 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
                 0x0000000008000000                __alt_data_end = 0x8000000
                 0x0000000008000000                PROVIDE (__alt_stack_pointer, __alt_data_end)
                 [!provide]                        PROVIDE (__alt_stack_limit, __alt_stack_base)
-                0x0000000000009498                PROVIDE (__alt_heap_start, end)
+                0x0000000000009474                PROVIDE (__alt_heap_start, end)
                 0x0000000008000000                PROVIDE (__alt_heap_limit, 0x8000000)
 OUTPUT(piano.elf elf32-littlenios2)
 

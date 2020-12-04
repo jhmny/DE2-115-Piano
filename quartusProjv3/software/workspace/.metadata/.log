@@ -5128,3 +5128,111 @@ org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 22:56:21.796
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:15.312
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:15.858
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:17.943
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:30.189
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:30.729
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:33.558
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:43.704
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:44.815
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:46.963
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:50.571
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:51.115
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:00:54.180
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:08:31.464
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:08:32.595
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:08:34.685
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:10:06.536
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:10:07.074
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:10:08.969
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:11:20.746
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:11:21.295
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:11:23.359
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:17:55.821
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:17:56.371
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:17:58.420
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:43:23.357
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:43:23.926
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:43:25.917
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:45:39.908
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:45:40.457
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:45:42.530
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:46:02.346
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:46:02.899
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:46:04.994
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:47:07.497
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:47:08.050
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8409150 --timestamp=1606954365]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:47:10.146
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]

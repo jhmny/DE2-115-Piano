@@ -2633,3 +2633,1087 @@ Info: Building ../piano_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
 [BSP build complete]
 [piano build complete]
+23:00:12 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+piano.c:20:20: warning: unused variable 'ps2S' [-Wunused-variable]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                    ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:00:14 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:00:28 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:00:29 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:00:42 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:00:48 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:00:49 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:08:19 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+piano.c:21:22: error: 'ps2' undeclared (first use in this function)
+     alt_up_ps2_init(&ps2);
+                      ^
+piano.c:21:22: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:20:20: warning: unused variable 'ps2S' [-Wunused-variable]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                    ^
+make: *** [obj/default/piano.o] Error 1
+23:08:21 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+piano.c:21:22: error: 'ps2' undeclared (first use in this function)
+     alt_up_ps2_init(&ps2);
+                      ^
+piano.c:21:22: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:20:20: warning: unused variable 'ps2S' [-Wunused-variable]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                    ^
+make: *** [obj/default/piano.o] Error 1
+23:08:28 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:08:30 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:10:04 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:10:05 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:10:37 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:18: error: incompatible type for argument 1 of 'alt_up_ps2_init'
+  alt_up_ps2_init(ps2S);
+                  ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'alt_up_ps2_dev {aka struct alt_up_ps2_dev}'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+make: *** [obj/default/piano.o] Error 1
+23:10:38 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:18: error: incompatible type for argument 1 of 'alt_up_ps2_init'
+  alt_up_ps2_init(ps2S);
+                  ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'alt_up_ps2_dev {aka struct alt_up_ps2_dev}'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+make: *** [obj/default/piano.o] Error 1
+23:11:18 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,1}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:11:19 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:17:53 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:17:54 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:18:11 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+piano.c:22:18: error: invalid type argument of unary '*' (have 'alt_up_ps2_dev {aka struct alt_up_ps2_dev}')
+  alt_up_ps2_init(*ps2S);
+                  ^
+make: *** [obj/default/piano.o] Error 1
+23:18:12 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:647:20: note: (near initialization for 'ps2S.dev.llist.next')
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:20:28: note: in expansion of macro 'PS2_0_BASE'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                            ^
+../piano_bsp/system.h:648:19: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                       ^
+../piano_bsp/system.h:648:19: note: (near initialization for 'ps2S.dev.llist.previous')
+ #define PS2_0_IRQ 4
+                   ^
+piano.c:20:39: note: in expansion of macro 'PS2_0_IRQ'
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                       ^
+piano.c:20:51: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                                                   ^
+piano.c:20:51: note: (near initialization for 'ps2S.dev.open')
+piano.c:20:27: warning: missing braces around initializer [-Wmissing-braces]
+     alt_up_ps2_dev ps2S = {PS2_0_BASE,PS2_0_IRQ,0,2}; //set type to keyboard
+                           ^
+piano.c:20:27: note: (near initialization for 'ps2S')
+piano.c:22:18: error: invalid type argument of unary '*' (have 'alt_up_ps2_dev {aka struct alt_up_ps2_dev}')
+  alt_up_ps2_init(*ps2S);
+                  ^
+make: *** [obj/default/piano.o] Error 1
+23:22:48 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2'
+  ps2 = alt_up_ps2_open_dev(PS2_0_BASE);
+  ^
+piano.c:22:2: error: 'ps2' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: passing argument 1 of 'alt_up_ps2_open_dev' makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:22:28: note: in expansion of macro 'PS2_0_BASE'
+  ps2 = alt_up_ps2_open_dev(PS2_0_BASE);
+                            ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: expected 'const char *' but argument is of type 'int'
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+piano.c:23:18: error: 'ps2S' undeclared (first use in this function)
+  alt_up_ps2_init(ps2S);
+                  ^
+make: *** [obj/default/piano.o] Error 1
+23:22:49 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2'
+  ps2 = alt_up_ps2_open_dev(PS2_0_BASE);
+  ^
+piano.c:22:2: error: 'ps2' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: passing argument 1 of 'alt_up_ps2_open_dev' makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:22:28: note: in expansion of macro 'PS2_0_BASE'
+  ps2 = alt_up_ps2_open_dev(PS2_0_BASE);
+                            ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: expected 'const char *' but argument is of type 'int'
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+piano.c:23:18: error: 'ps2S' undeclared (first use in this function)
+  alt_up_ps2_init(ps2S);
+                  ^
+make: *** [obj/default/piano.o] Error 1
+23:23:31 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(PS2_0_BASE);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: passing argument 1 of 'alt_up_ps2_open_dev' makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:22:29: note: in expansion of macro 'PS2_0_BASE'
+  ps2S = alt_up_ps2_open_dev(PS2_0_BASE);
+                             ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: expected 'const char *' but argument is of type 'int'
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+make: *** [obj/default/piano.o] Error 1
+23:23:32 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(PS2_0_BASE);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+In file included from piano.c:8:0:
+../piano_bsp/system.h:647:20: warning: passing argument 1 of 'alt_up_ps2_open_dev' makes pointer from integer without a cast [-Wint-conversion]
+ #define PS2_0_BASE 0x8409148
+                    ^
+piano.c:22:29: note: in expansion of macro 'PS2_0_BASE'
+  ps2S = alt_up_ps2_open_dev(PS2_0_BASE);
+                             ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: expected 'const char *' but argument is of type 'int'
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+make: *** [obj/default/piano.o] Error 1
+23:24:26 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(PS2_PORT_NAME);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:22:29: error: 'PS2_PORT_NAME' undeclared (first use in this function)
+  ps2S = alt_up_ps2_open_dev(PS2_PORT_NAME);
+                             ^
+make: *** [obj/default/piano.o] Error 1
+23:24:27 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(PS2_PORT_NAME);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:22:29: error: 'PS2_PORT_NAME' undeclared (first use in this function)
+  ps2S = alt_up_ps2_open_dev(PS2_PORT_NAME);
+                             ^
+make: *** [obj/default/piano.o] Error 1
+23:25:48 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(altera_up_avalon_ps2);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:22:29: error: 'altera_up_avalon_ps2' undeclared (first use in this function)
+  ps2S = alt_up_ps2_open_dev(altera_up_avalon_ps2);
+                             ^
+make: *** [obj/default/piano.o] Error 1
+23:25:50 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(altera_up_avalon_ps2);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:22:29: error: 'altera_up_avalon_ps2' undeclared (first use in this function)
+  ps2S = alt_up_ps2_open_dev(altera_up_avalon_ps2);
+                             ^
+make: *** [obj/default/piano.o] Error 1
+23:26:07 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(PS2_0_NAME);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/piano.o] Error 1
+23:26:08 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ps2S'
+  ps2S = alt_up_ps2_open_dev(PS2_0_NAME);
+  ^
+piano.c:22:2: error: 'ps2S' undeclared (first use in this function)
+piano.c:22:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/piano.o] Error 1
+23:32:31 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before '&' token
+  &ps2S = alt_up_ps2_open_dev(PS2_0_NAME);
+  ^
+piano.c:22:3: error: 'ps2S' undeclared (first use in this function)
+  &ps2S = alt_up_ps2_open_dev(PS2_0_NAME);
+   ^
+piano.c:22:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/piano.o] Error 1
+23:32:32 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before '&' token
+  &ps2S = alt_up_ps2_open_dev(PS2_0_NAME);
+  ^
+piano.c:22:3: error: 'ps2S' undeclared (first use in this function)
+  &ps2S = alt_up_ps2_open_dev(PS2_0_NAME);
+   ^
+piano.c:22:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/piano.o] Error 1
+23:34:49 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:10: error: too many arguments to function 'alt_up_ps2_open_dev'
+  &ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+          ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+piano.c:22:8: error: lvalue required as left operand of assignment
+  &ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+        ^
+piano.c:23:18: warning: passing argument 1 of 'alt_up_ps2_init' from incompatible pointer type [-Wincompatible-pointer-types]
+  alt_up_ps2_init(&ps2S);
+                  ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'alt_up_ps2_dev ** {aka struct alt_up_ps2_dev **}'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+make: *** [obj/default/piano.o] Error 1
+23:34:50 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:10: error: too many arguments to function 'alt_up_ps2_open_dev'
+  &ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+          ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+piano.c:22:8: error: lvalue required as left operand of assignment
+  &ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+        ^
+piano.c:23:18: warning: passing argument 1 of 'alt_up_ps2_init' from incompatible pointer type [-Wincompatible-pointer-types]
+  alt_up_ps2_init(&ps2S);
+                  ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:90:6: note: expected 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}' but argument is of type 'alt_up_ps2_dev ** {aka struct alt_up_ps2_dev **}'
+ void alt_up_ps2_init(alt_up_ps2_dev *ps2);
+      ^
+make: *** [obj/default/piano.o] Error 1
+23:41:38 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:3: error: 's2S' undeclared (first use in this function)
+  *s2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+   ^
+piano.c:22:3: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:22:9: error: too many arguments to function 'alt_up_ps2_open_dev'
+  *s2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+make: *** [obj/default/piano.o] Error 1
+23:41:39 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:3: error: 's2S' undeclared (first use in this function)
+  *s2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+   ^
+piano.c:22:3: note: each undeclared identifier is reported only once for each function it appears in
+piano.c:22:9: error: too many arguments to function 'alt_up_ps2_open_dev'
+  *s2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+make: *** [obj/default/piano.o] Error 1
+23:41:57 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:10: error: too many arguments to function 'alt_up_ps2_open_dev'
+  *ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+          ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+piano.c:22:8: error: incompatible types when assigning to type 'alt_up_ps2_dev {aka struct alt_up_ps2_dev}' from type 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}'
+  *ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+        ^
+make: *** [obj/default/piano.o] Error 1
+23:41:58 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:10: error: too many arguments to function 'alt_up_ps2_open_dev'
+  *ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+          ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+piano.c:22:8: error: incompatible types when assigning to type 'alt_up_ps2_dev {aka struct alt_up_ps2_dev}' from type 'alt_up_ps2_dev * {aka struct alt_up_ps2_dev *}'
+  *ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+        ^
+make: *** [obj/default/piano.o] Error 1
+23:42:50 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:9: error: too many arguments to function 'alt_up_ps2_open_dev'
+  ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+make: *** [obj/default/piano.o] Error 1
+23:42:51 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+piano.c:22:9: error: too many arguments to function 'alt_up_ps2_open_dev'
+  ps2S = alt_up_ps2_open_dev("swag",PS2_0_BASE);
+         ^
+In file included from piano.c:13:0:
+../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:198:17: note: declared here
+ alt_up_ps2_dev* alt_up_ps2_open_dev(const char* name);
+                 ^
+make: *** [obj/default/piano.o] Error 1
+23:43:20 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:43:22 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:45:37 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:45:39 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:45:59 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:46:01 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
+23:47:04 **** Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+Info: Compiling piano.c to obj/default/piano.o
+nios2-elf-gcc -xc -MP -MMD -c -I../piano_bsp//HAL/inc -I../piano_bsp/ -I../piano_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/piano.o piano.c
+piano.c: In function 'main':
+piano.c:19:5: warning: implicit declaration of function 'alt_putstr' [-Wimplicit-function-declaration]
+     alt_putstr("program start");
+     ^
+Info: Linking piano.elf
+nios2-elf-g++  -T'../piano_bsp//linker.x' -msys-crt0='../piano_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../piano_bsp/   -Wl,-Map=piano.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o piano.elf obj/default/piano.o -lm -msys-lib=m
+nios2-elf-insert piano.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8409150 --timestamp 1606954365 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3" --jdi ../..//output_files/quartusProjv3.jdi --sopcinfo c:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano_bsp/../../nios_system.sopcinfo
+Info: (piano.elf) 30 KBytes program size (code + initialized data).
+Info:             131034 KBytes free for stack + heap.
+Info: Creating piano.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source piano.elf >piano.objdump
+[piano build complete]
+23:47:06 **** Incremental Build of configuration Nios II for project piano ****
+make all 
+Info: Building ../piano_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../piano_bsp/
+[BSP build complete]
+[piano build complete]
