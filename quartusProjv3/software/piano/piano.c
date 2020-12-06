@@ -14,6 +14,7 @@
 #include "altera_up_ps2_keyboard.h"
 #include "sys/alt_dev.h"
 
+<<<<<<< HEAD
 volatile int * PS2_ptr = (int *) PS2_0_BASE;
 int main()
 {
@@ -23,12 +24,19 @@ int main()
 	alt_up_ps2_init(ps2S);
 
     char psChar;
+=======
+int main()
+{
+    alt_putstr("program start");
+    alt_up_ps2_dev ps2S; //set type to keyboard
+    unsigned char psChar;
+    alt_up_ps2_init(&ps2S);
+>>>>>>> parent of 252850d... swag
     alt_putstr("before while loop");
     while (1) //infinite while loop to wait for ints && IORD_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE) == 0b01
     {
-       // alt_up_ps2_read_data_byte(&ps2S, &psChar);
-        psChar = IORD_8DIRECT(PS2_0_BASE, 0x0);
-        if (psChar == 'w' )
+        alt_up_ps2_read_data_byte(&ps2S, &psChar);
+        if (psChar == "w")
         {
             alt_putstr(psChar);
             alt_putstr("state reset");
@@ -37,3 +45,9 @@ int main()
     return 0;
 };
 
+<<<<<<< HEAD
+=======
+//showa time
+//swag
+//oh yeah
+>>>>>>> parent of 252850d... swag

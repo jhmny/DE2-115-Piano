@@ -4894,6 +4894,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
 	... 9 more
+<<<<<<< HEAD
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 03:55:02.293
 !MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
@@ -5236,3 +5237,5 @@ org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
 
 !ENTRY com.altera.sbtgui.launch 1 0 2020-12-03 23:47:10.146
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8409150 --timestamp=1606954365 --reset-target /cygdrive/c/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/software/piano/piano.elf]
+=======
+>>>>>>> parent of 252850d... swag
