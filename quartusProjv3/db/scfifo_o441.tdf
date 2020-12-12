@@ -21,7 +21,7 @@
 FUNCTION a_dpfifo_bs31 (clock, data[23..0], rreq, sclr, wreq)
 RETURNS ( empty, full, q[23..0], usedw[6..0]);
 
---synthesis_resources = lut 20 M9K 1 reg 35 
+--synthesis_resources = lut 13 M9K 1 reg 28 
 SUBDESIGN scfifo_o441
 ( 
 	clock	:	input;

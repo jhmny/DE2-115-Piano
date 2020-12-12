@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.12.07.23:34:27"
+ outputDirectory="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone IV E"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP4CE115F29C7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_AUDIO_PLL_REF_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_AUDIO_PLL_REF_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_AUDIO_PLL_REF_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SYS_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SYS_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_SYS_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="audio" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="audio_BCLK" direction="input" role="BCLK" width="1" />
+   <port name="audio_DACDAT" direction="output" role="DACDAT" width="1" />
+   <port name="audio_DACLRCK" direction="input" role="DACLRCK" width="1" />
+  </interface>
+  <interface name="audio_irq" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="Audio_Subsystem.audio_slave" />
+   <property name="associatedClock" value="sys_clk" />
+   <property name="associatedReset" value="sys_reset" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="audio_irq_irq" direction="output" role="irq" width="1" />
+  </interface>
+  <interface name="audio_pll_clk" kind="clock" start="1">
+   <property name="associatedDirectClock" value="" />
+   <property name="clockRate" value="12288000" />
+   <property name="clockRateKnown" value="true" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="audio_pll_clk_clk" direction="output" role="clk" width="1" />
+  </interface>
+  <interface name="audio_pll_ref_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="audio_pll_ref_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="audio_pll_ref_reset" kind="reset" start="0">
+   <property name="associatedClock" value="audio_pll_ref_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="audio_pll_ref_reset_reset"
+       direction="input"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="audio_pll_reset" kind="reset" start="1">
+   <property name="associatedClock" value="" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="none" />
+   <property name="synchronousEdges" value="NONE" />
+   <port
+       name="audio_pll_reset_reset"
+       direction="output"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="audio_slave" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="16" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="sys_clk" />
+   <property name="associatedReset" value="sys_reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="1" />
+   <property name="readWaitStates" value="0" />
+   <property name="readWaitTime" value="0" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port name="audio_slave_address" direction="input" role="address" width="2" />
+   <port
+       name="audio_slave_chipselect"
+       direction="input"
+       role="chipselect"
+       width="1" />
+   <port name="audio_slave_read" direction="input" role="read" width="1" />
+   <port name="audio_slave_write" direction="input" role="write" width="1" />
+   <port
+       name="audio_slave_writedata"
+       direction="input"
+       role="writedata"
+       width="32" />
+   <port
+       name="audio_slave_readdata"
+       direction="output"
+       role="readdata"
+       width="32" />
+  </interface>
+  <interface name="sys_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="sys_clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="sys_reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="sys_reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="Audio_Subsystem:1.0:AUTO_AUDIO_PLL_REF_CLK_CLOCK_DOMAIN=-1,AUTO_AUDIO_PLL_REF_CLK_CLOCK_RATE=-1,AUTO_AUDIO_PLL_REF_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE115F29C7,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1607412865,AUTO_SYS_CLK_CLOCK_DOMAIN=-1,AUTO_SYS_CLK_CLOCK_RATE=-1,AUTO_SYS_CLK_RESET_DOMAIN=-1,AUTO_UNIQUE_ID=(altera_up_avalon_audio:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone IV E,audio_in=false,audio_out=true,avalon_bus_type=Memory Mapped,dw=32)(altera_up_avalon_audio_pll:18.0:AUTO_DEVICE=EP4CE115F29C7,AUTO_DEVICE_SPEEDGRADE=7,audio_clk_freq=12.288,device_family=Cyclone IV E,gui_refclk=50.0,refclk=50.0(altera_up_altpll:18.0:DEVICE_FAMILY=Cyclone IV,OUTCLK0_DIV=297,OUTCLK0_MULT=73,OUTCLK1_DIV=1,OUTCLK1_MULT=1,OUTCLK2_DIV=1,OUTCLK2_MULT=1,PHASE_SHIFT=0,audio_clk_freq=12.288,gui_device_family=Cyclone IV E,type=Audio,video_in=5MP Digital Camera (THDB_D5M),video_out=4.3&quot; LCD (TRDB_LTM))(altera_up_avalon_reset_from_locked_signal:18.0:)(conduit:18.1:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0))(clock_source:18.1:clockFrequency=50000000,clockFrequencyKnown=false,inputClockFrequency=0,resetSynchronousEdges=NONE)(clock:18.1:)(reset:18.1:)"
+   instancePathKey="Audio_Subsystem"
+   kind="Audio_Subsystem"
+   version="1.0"
+   name="Audio_Subsystem">
+  <parameter name="AUTO_SYS_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_AUDIO_PLL_REF_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1607412865" />
+  <parameter name="AUTO_DEVICE" value="EP4CE115F29C7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_AUDIO_PLL_REF_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_AUDIO_PLL_REF_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_SYS_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_SYS_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/Audio_Subsystem.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_audio_bit_counter.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_audio_in_deserializer.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_audio_out_serializer.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_clock_edge.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_sync_fifo.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/Audio_Subsystem_Audio.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/Audio_Subsystem_Audio_PLL.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_altpll.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/altera_up_avalon_audio_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_audio_bit_counter.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_audio_in_deserializer.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_audio_out_serializer.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_clock_edge.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_sync_fifo.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_avalon_audio_pll/altera_up_avalon_audio_pll_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_altpll/altera_up_altpll_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_avalon_reset_from_locked_signal/altera_up_avalon_reset_from_locked_signal_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 0 starting:Audio_Subsystem "Audio_Subsystem"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>2</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>4</b> modules, <b>4</b> connections]]></message>
+   <message level="Debug" culprit="Audio_Subsystem"><![CDATA["<b>Audio_Subsystem</b>" reuses <b>altera_up_avalon_audio</b> "<b>submodules/Audio_Subsystem_Audio</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem"><![CDATA["<b>Audio_Subsystem</b>" reuses <b>altera_up_avalon_audio_pll</b> "<b>submodules/Audio_Subsystem_Audio_PLL</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem"><![CDATA["<b>Audio_Subsystem</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 2 starting:altera_up_avalon_audio "submodules/Audio_Subsystem_Audio"</message>
+   <message level="Info" culprit="Audio">Starting Generation of Audio Controller</message>
+   <message level="Info" culprit="Audio"><![CDATA["<b>Audio_Subsystem</b>" instantiated <b>altera_up_avalon_audio</b> "<b>Audio</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 1 starting:altera_up_avalon_audio_pll "submodules/Audio_Subsystem_Audio_PLL"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>1</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Audio_PLL"><![CDATA["<b>Audio_PLL</b>" reuses <b>altera_up_altpll</b> "<b>submodules/altera_up_altpll</b>"]]></message>
+   <message level="Debug" culprit="Audio_PLL"><![CDATA["<b>Audio_PLL</b>" reuses <b>altera_up_avalon_reset_from_locked_signal</b> "<b>submodules/altera_up_avalon_reset_from_locked_signal</b>"]]></message>
+   <message level="Info" culprit="Audio_PLL"><![CDATA["<b>Audio_Subsystem</b>" instantiated <b>altera_up_avalon_audio_pll</b> "<b>Audio_PLL</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 1 starting:altera_up_altpll "submodules/altera_up_altpll"</message>
+   <message level="Info" culprit="audio_pll"><![CDATA["<b>Audio_PLL</b>" instantiated <b>altera_up_altpll</b> "<b>audio_pll</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 0 starting:altera_up_avalon_reset_from_locked_signal "submodules/altera_up_avalon_reset_from_locked_signal"</message>
+   <message level="Info" culprit="reset_from_locked"><![CDATA["<b>Audio_PLL</b>" instantiated <b>altera_up_avalon_reset_from_locked_signal</b> "<b>reset_from_locked</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 2 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>Audio_Subsystem</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_up_avalon_audio:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone IV E,audio_in=false,audio_out=true,avalon_bus_type=Memory Mapped,dw=32"
+   instancePathKey="Audio_Subsystem:.:Audio"
+   kind="altera_up_avalon_audio"
+   version="18.0"
+   name="Audio_Subsystem_Audio">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="dw" value="32" />
+  <parameter name="avalon_bus_type" value="Memory Mapped" />
+  <parameter name="audio_in" value="false" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="audio_out" value="true" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_audio_bit_counter.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_audio_in_deserializer.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_audio_out_serializer.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_clock_edge.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_sync_fifo.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/Audio_Subsystem_Audio.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/altera_up_avalon_audio_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_audio_bit_counter.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_audio_in_deserializer.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_audio_out_serializer.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_clock_edge.v" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/audio_video/altera_up_avalon_audio/hdl/altera_up_sync_fifo.v" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="Audio_Subsystem" as="Audio" />
+  <messages>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 2 starting:altera_up_avalon_audio "submodules/Audio_Subsystem_Audio"</message>
+   <message level="Info" culprit="Audio">Starting Generation of Audio Controller</message>
+   <message level="Info" culprit="Audio"><![CDATA["<b>Audio_Subsystem</b>" instantiated <b>altera_up_avalon_audio</b> "<b>Audio</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_up_avalon_audio_pll:18.0:AUTO_DEVICE=EP4CE115F29C7,AUTO_DEVICE_SPEEDGRADE=7,audio_clk_freq=12.288,device_family=Cyclone IV E,gui_refclk=50.0,refclk=50.0(altera_up_altpll:18.0:DEVICE_FAMILY=Cyclone IV,OUTCLK0_DIV=297,OUTCLK0_MULT=73,OUTCLK1_DIV=1,OUTCLK1_MULT=1,OUTCLK2_DIV=1,OUTCLK2_MULT=1,PHASE_SHIFT=0,audio_clk_freq=12.288,gui_device_family=Cyclone IV E,type=Audio,video_in=5MP Digital Camera (THDB_D5M),video_out=4.3&quot; LCD (TRDB_LTM))(altera_up_avalon_reset_from_locked_signal:18.0:)(conduit:18.1:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)"
+   instancePathKey="Audio_Subsystem:.:Audio_PLL"
+   kind="altera_up_avalon_audio_pll"
+   version="18.0"
+   name="Audio_Subsystem_Audio_PLL">
+  <parameter name="gui_refclk" value="50.0" />
+  <parameter name="AUTO_DEVICE" value="EP4CE115F29C7" />
+  <parameter name="refclk" value="50.0" />
+  <parameter name="device_family" value="Cyclone IV E" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <parameter name="audio_clk_freq" value="12.288" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/Audio_Subsystem_Audio_PLL.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_altpll.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_avalon_audio_pll/altera_up_avalon_audio_pll_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_altpll/altera_up_altpll_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_avalon_reset_from_locked_signal/altera_up_avalon_reset_from_locked_signal_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="Audio_Subsystem" as="Audio_PLL" />
+  <messages>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 1 starting:altera_up_avalon_audio_pll "submodules/Audio_Subsystem_Audio_PLL"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>1</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="Audio_PLL"><![CDATA["<b>Audio_PLL</b>" reuses <b>altera_up_altpll</b> "<b>submodules/altera_up_altpll</b>"]]></message>
+   <message level="Debug" culprit="Audio_PLL"><![CDATA["<b>Audio_PLL</b>" reuses <b>altera_up_avalon_reset_from_locked_signal</b> "<b>submodules/altera_up_avalon_reset_from_locked_signal</b>"]]></message>
+   <message level="Info" culprit="Audio_PLL"><![CDATA["<b>Audio_Subsystem</b>" instantiated <b>altera_up_avalon_audio_pll</b> "<b>Audio_PLL</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 1 starting:altera_up_altpll "submodules/altera_up_altpll"</message>
+   <message level="Info" culprit="audio_pll"><![CDATA["<b>Audio_PLL</b>" instantiated <b>altera_up_altpll</b> "<b>audio_pll</b>"]]></message>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 0 starting:altera_up_avalon_reset_from_locked_signal "submodules/altera_up_avalon_reset_from_locked_signal"</message>
+   <message level="Info" culprit="reset_from_locked"><![CDATA["<b>Audio_PLL</b>" instantiated <b>altera_up_avalon_reset_from_locked_signal</b> "<b>reset_from_locked</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:18.1:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="Audio_Subsystem:.:rst_controller"
+   kind="altera_reset_controller"
+   version="18.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="Audio_Subsystem" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 2 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>Audio_Subsystem</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_up_altpll:18.0:DEVICE_FAMILY=Cyclone IV,OUTCLK0_DIV=297,OUTCLK0_MULT=73,OUTCLK1_DIV=1,OUTCLK1_MULT=1,OUTCLK2_DIV=1,OUTCLK2_MULT=1,PHASE_SHIFT=0,audio_clk_freq=12.288,gui_device_family=Cyclone IV E,type=Audio,video_in=5MP Digital Camera (THDB_D5M),video_out=4.3&quot; LCD (TRDB_LTM)"
+   instancePathKey="Audio_Subsystem:.:Audio_PLL:.:audio_pll"
+   kind="altera_up_altpll"
+   version="18.0"
+   name="altera_up_altpll">
+  <parameter name="OUTCLK0_DIV" value="297" />
+  <parameter name="OUTCLK2_MULT" value="1" />
+  <parameter name="PHASE_SHIFT" value="0" />
+  <parameter name="OUTCLK1_DIV" value="1" />
+  <parameter name="OUTCLK0_MULT" value="73" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone IV" />
+  <parameter name="video_in" value="5MP Digital Camera (THDB_D5M)" />
+  <parameter name="gui_device_family" value="Cyclone IV E" />
+  <parameter name="OUTCLK2_DIV" value="1" />
+  <parameter name="OUTCLK1_MULT" value="1" />
+  <generatedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_altpll.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_altpll/altera_up_altpll_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="Audio_Subsystem_Audio_PLL" as="audio_pll" />
+  <messages>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 1 starting:altera_up_altpll "submodules/altera_up_altpll"</message>
+   <message level="Info" culprit="audio_pll"><![CDATA["<b>Audio_PLL</b>" instantiated <b>altera_up_altpll</b> "<b>audio_pll</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_up_avalon_reset_from_locked_signal:18.0:"
+   instancePathKey="Audio_Subsystem:.:Audio_PLL:.:reset_from_locked"
+   kind="altera_up_avalon_reset_from_locked_signal"
+   version="18.0"
+   name="altera_up_avalon_reset_from_locked_signal">
+  <generatedFiles>
+   <file
+       path="C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/Audio_Subsystem/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.1/ip/altera/university_program/clocks/altera_up_avalon_reset_from_locked_signal/altera_up_avalon_reset_from_locked_signal_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="Audio_Subsystem_Audio_PLL" as="reset_from_locked" />
+  <messages>
+   <message level="Debug" culprit="Audio_Subsystem">queue size: 0 starting:altera_up_avalon_reset_from_locked_signal "submodules/altera_up_avalon_reset_from_locked_signal"</message>
+   <message level="Info" culprit="reset_from_locked"><![CDATA["<b>Audio_PLL</b>" instantiated <b>altera_up_avalon_reset_from_locked_signal</b> "<b>reset_from_locked</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

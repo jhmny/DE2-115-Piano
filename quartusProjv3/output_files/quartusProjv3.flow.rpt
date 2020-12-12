@@ -1,5 +1,5 @@
 Flow report for quartusProjv3
-Wed Dec 02 16:16:16 2020
+Tue Dec 08 01:43:01 2020
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 02 16:16:11 2020       ;
+; Flow Status                        ; Successful - Tue Dec 08 01:42:55 2020       ;
 ; Quartus Prime Version              ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                      ; quartusProjv3                               ;
 ; Top-level Entity Name              ; quartusProjv3                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 7,391 / 114,480 ( 6 % )                     ;
-;     Total combinational functions  ; 6,058 / 114,480 ( 5 % )                     ;
-;     Dedicated logic registers      ; 4,867 / 114,480 ( 4 % )                     ;
-; Total registers                    ; 4986                                        ;
-; Total pins                         ; 221 / 529 ( 42 % )                          ;
+; Total logic elements               ; 6,300 / 114,480 ( 6 % )                     ;
+;     Total combinational functions  ; 5,612 / 114,480 ( 5 % )                     ;
+;     Dedicated logic registers      ; 3,824 / 114,480 ( 3 % )                     ;
+; Total registers                    ; 3943                                        ;
+; Total pins                         ; 246 / 529 ( 47 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 210,880 / 3,981,312 ( 5 % )                 ;
+; Total memory bits                  ; 206,784 / 3,981,312 ( 5 % )                 ;
 ; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                             ;
 ; Total PLLs                         ; 2 / 4 ( 50 % )                              ;
 +------------------------------------+---------------------------------------------+
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2020 16:14:35 ;
+; Start date & time ; 12/08/2020 01:41:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; quartusProjv3       ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 49410868024667.160695447414196                                ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 49410868024667.160742049216520                                ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --          ; --         ;
 ; MISC_FILE                           ; nios_system/synthesis/../nios_system.cmp                      ; --            ; --          ; --         ;
@@ -84,10 +84,12 @@ https://fpgasoftware.intel.com/eula.
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family)                        ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                        ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                        ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                           ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                         ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --            ; --          ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.regmap                      ; --            ; --          ; --         ;
 ; SLD_FILE                            ; nios_system/synthesis/nios_system.debuginfo                   ; --            ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1606954365 ; --            ; nios_system ; --         ;
+; SLD_INFO                            ; QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1607420416 ; --            ; nios_system ; --         ;
 ; SOPCINFO_FILE                       ; nios_system/synthesis/../../nios_system.sopcinfo              ; --            ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --            ; --          ; --         ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
@@ -98,11 +100,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:51     ; 1.0                     ; 5119 MB             ; 00:01:05                           ;
-; Fitter               ; 00:00:33     ; 1.1                     ; 6445 MB             ; 00:01:00                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4724 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.5                     ; 5033 MB             ; 00:00:05                           ;
-; Total                ; 00:01:32     ; --                      ; --                  ; 00:02:14                           ;
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 5085 MB             ; 00:01:02                           ;
+; Fitter               ; 00:00:27     ; 1.1                     ; 6428 MB             ; 00:00:48                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4715 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.5                     ; 5013 MB             ; 00:00:05                           ;
+; Total                ; 00:01:20     ; --                      ; --                  ; 00:01:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

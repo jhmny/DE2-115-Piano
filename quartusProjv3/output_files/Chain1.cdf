@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/Joshua/Documents/GitHub/DE2-115-Piano/quartusProjv3/output_files/") File("quartusProjv3_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/Joshua/Desktop/178/quartusProjv3/output_files/") File("quartusProjv3_time_limited.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -98,6 +98,20 @@ localparam WRITE_MASK		= {8'h00, 1'b1, 8'h00, 1'b1, 8'h00, 1'b1};
 
 localparam RESTART_COUNTER	= 'h9;
 
+// Auto init parameters
+localparam AIRS				= 57;	// Auto Init ROM's size
+localparam AIAW				= 5;	// Auto Init ROM's address width 
+
+localparam AUD_LINE_IN_LC	= 9'h01A;
+localparam AUD_LINE_IN_RC	= 9'h01A;
+localparam AUD_LINE_OUT_LC	= 9'h07B;
+localparam AUD_LINE_OUT_RC	= 9'h07B;
+localparam AUD_ADC_PATH		= 9'd149;
+localparam AUD_DAC_PATH		= 9'h006;
+localparam AUD_POWER			= 9'h000;
+localparam AUD_DATA_FORMAT	= 9'd77;
+localparam AUD_SAMPLE_CTRL	= 9'd12;
+localparam AUD_SET_ACTIVE	= 9'h001;
 
 // Serial Bus Controller parameters
 //parameter SBDW				= 26;	// Serial bus's datawidth
@@ -120,6 +134,8 @@ localparam	STATE_0_IDLE				= 3'h0,
 wire						internal_reset;
 
 //  Auto init signals
+wire			[AIAW:0]	rom_address;
+wire			[DW: 0]	rom_data;
 wire						ack;
 
 wire			[DW: 0]	auto_init_data;
@@ -332,14 +348,13 @@ assign irq				= control_reg[1] & ~start_external_transfer & auto_init_complete;
 assign internal_reset = reset | 
 		((address == 2'h0) & write & byteenable[0] & writedata[0]);
 
-assign auto_init_transfer_en	= 1'b0;
-assign auto_init_complete		= 1'b1;
-assign auto_init_error			= 1'b0;
 
 //  Signals to the serial controller
 assign transfer_mask = WRITE_MASK;
 
 assign data_to_controller = 
+		(~auto_init_complete) ?
+			auto_init_data :
 			(device_for_transfer == 2'h0) ?
 				{8'h34, 1'b0, 
 				 address_for_transfer[6:0], data_reg[8], 1'b0, 
@@ -371,6 +386,56 @@ assign ack =	data_from_controller[18] |
 /*****************************************************************************
  *                              Internal Modules                             *
  *****************************************************************************/
+
+altera_up_av_config_auto_init AV_Config_Auto_Init (
+	// Inputs
+	.clk						(clk),
+	.reset					(internal_reset),
+
+	.clear_error			(1'b0),
+
+	.ack						(ack),
+	.transfer_complete	(transfer_complete),
+
+	.rom_data				(rom_data),
+
+	// Bidirectionals
+
+	// Outputs
+	.data_out				(auto_init_data),
+	.transfer_data			(auto_init_transfer_en),
+
+	.rom_address			(rom_address),
+	
+	.auto_init_complete	(auto_init_complete),
+	.auto_init_error		(auto_init_error)
+);
+defparam	
+	AV_Config_Auto_Init.ROM_SIZE	= AIRS,
+	AV_Config_Auto_Init.AW			= AIAW,
+	AV_Config_Auto_Init.DW			= DW;
+
+altera_up_av_config_auto_init_ob_de2_115 Auto_Init_OB_Devices_ROM (
+	// Inputs
+	.rom_address			(rom_address),
+
+
+	// Bidirectionals
+
+	// Outputs
+	.rom_data				(rom_data)
+);
+defparam
+	Auto_Init_OB_Devices_ROM.AUD_LINE_IN_LC		= AUD_LINE_IN_LC,
+	Auto_Init_OB_Devices_ROM.AUD_LINE_IN_RC		= AUD_LINE_IN_RC,
+	Auto_Init_OB_Devices_ROM.AUD_LINE_OUT_LC		= AUD_LINE_OUT_LC,
+	Auto_Init_OB_Devices_ROM.AUD_LINE_OUT_RC		= AUD_LINE_OUT_RC,
+	Auto_Init_OB_Devices_ROM.AUD_ADC_PATH			= AUD_ADC_PATH,
+	Auto_Init_OB_Devices_ROM.AUD_DAC_PATH			= AUD_DAC_PATH,
+	Auto_Init_OB_Devices_ROM.AUD_POWER				= AUD_POWER,
+	Auto_Init_OB_Devices_ROM.AUD_DATA_FORMAT		= AUD_DATA_FORMAT,
+	Auto_Init_OB_Devices_ROM.AUD_SAMPLE_CTRL		= AUD_SAMPLE_CTRL,
+	Auto_Init_OB_Devices_ROM.AUD_SET_ACTIVE		= AUD_SET_ACTIVE;
 
 
 altera_up_av_config_serial_bus_controller Serial_Bus_Controller (

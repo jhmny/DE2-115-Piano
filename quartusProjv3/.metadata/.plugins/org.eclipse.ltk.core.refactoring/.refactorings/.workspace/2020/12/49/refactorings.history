@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;DE2-115-Piano&apos;" deleteContents="false" description="Delete resource &apos;DE2-115-Piano&apos;" element1="/DE2-115-Piano" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1606994586996"/>
-</session>

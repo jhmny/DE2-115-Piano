@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Wed Dec 02 16:19:35 PST 2020
+ * Generated: Tue Dec 08 01:43:31 PST 2020
  */
 
 /*
@@ -152,6 +152,7 @@
 #define __ALTERA_UP_AVALON_AUDIO_AND_VIDEO_CONFIG
 #define __ALTERA_UP_AVALON_PS2
 #define __ALTERA_UP_AVALON_SRAM
+#define __ALTERA_UP_AVALON_USB
 
 
 /*
@@ -170,19 +171,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x8409158
+#define ALT_STDERR_BASE 0x8409140
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x8409158
+#define ALT_STDIN_BASE 0x8409140
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x8409158
+#define ALT_STDOUT_BASE 0x8409140
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -191,31 +192,31 @@
 
 
 /*
- * audio_0 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_audio_0 altera_up_avalon_audio
-#define AUDIO_0_BASE 0x8409070
-#define AUDIO_0_IRQ 5
-#define AUDIO_0_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define AUDIO_0_NAME "/dev/audio_0"
-#define AUDIO_0_SPAN 16
-#define AUDIO_0_TYPE "altera_up_avalon_audio"
-
-
-/*
  * audio_and_video_config_0 configuration
  *
  */
 
 #define ALT_MODULE_CLASS_audio_and_video_config_0 altera_up_avalon_audio_and_video_config
-#define AUDIO_AND_VIDEO_CONFIG_0_BASE 0x8409060
+#define AUDIO_AND_VIDEO_CONFIG_0_BASE 0x8409040
 #define AUDIO_AND_VIDEO_CONFIG_0_IRQ -1
 #define AUDIO_AND_VIDEO_CONFIG_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define AUDIO_AND_VIDEO_CONFIG_0_NAME "/dev/audio_and_video_config_0"
 #define AUDIO_AND_VIDEO_CONFIG_0_SPAN 16
 #define AUDIO_AND_VIDEO_CONFIG_0_TYPE "altera_up_avalon_audio_and_video_config"
+
+
+/*
+ * audio_subsystem_Audio configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_audio_subsystem_Audio altera_up_avalon_audio
+#define AUDIO_SUBSYSTEM_AUDIO_BASE 0x8409050
+#define AUDIO_SUBSYSTEM_AUDIO_IRQ 6
+#define AUDIO_SUBSYSTEM_AUDIO_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define AUDIO_SUBSYSTEM_AUDIO_NAME "/dev/audio_subsystem_Audio"
+#define AUDIO_SUBSYSTEM_AUDIO_SPAN 16
+#define AUDIO_SUBSYSTEM_AUDIO_TYPE "altera_up_avalon_audio"
 
 
 /*
@@ -235,7 +236,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_0 altera_avalon_pio
-#define HEX_0_BASE 0x8409080
+#define HEX_0_BASE 0x8409060
 #define HEX_0_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_0_CAPTURE 0
@@ -262,7 +263,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_1 altera_avalon_pio
-#define HEX_1_BASE 0x8409090
+#define HEX_1_BASE 0x8409070
 #define HEX_1_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_1_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_1_CAPTURE 0
@@ -289,7 +290,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_2 altera_avalon_pio
-#define HEX_2_BASE 0x84090a0
+#define HEX_2_BASE 0x8409080
 #define HEX_2_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_2_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_2_CAPTURE 0
@@ -316,7 +317,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_3 altera_avalon_pio
-#define HEX_3_BASE 0x84090b0
+#define HEX_3_BASE 0x8409090
 #define HEX_3_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_3_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_3_CAPTURE 0
@@ -343,7 +344,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_4 altera_avalon_pio
-#define HEX_4_BASE 0x84090c0
+#define HEX_4_BASE 0x84090a0
 #define HEX_4_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_4_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_4_CAPTURE 0
@@ -370,7 +371,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_5 altera_avalon_pio
-#define HEX_5_BASE 0x84090d0
+#define HEX_5_BASE 0x84090b0
 #define HEX_5_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_5_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_5_CAPTURE 0
@@ -397,7 +398,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_6 altera_avalon_pio
-#define HEX_6_BASE 0x84090e0
+#define HEX_6_BASE 0x84090c0
 #define HEX_6_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_6_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_6_CAPTURE 0
@@ -424,7 +425,7 @@
  */
 
 #define ALT_MODULE_CLASS_hex_7 altera_avalon_pio
-#define HEX_7_BASE 0x84090f0
+#define HEX_7_BASE 0x84090d0
 #define HEX_7_BIT_CLEARING_EDGE_REGISTER 0
 #define HEX_7_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HEX_7_CAPTURE 0
@@ -477,7 +478,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x8409158
+#define JTAG_UART_0_BASE 0x8409140
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -495,7 +496,7 @@
  */
 
 #define ALT_MODULE_CLASS_keys altera_avalon_pio
-#define KEYS_BASE 0x8409120
+#define KEYS_BASE 0x8409100
 #define KEYS_BIT_CLEARING_EDGE_REGISTER 0
 #define KEYS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define KEYS_CAPTURE 1
@@ -522,7 +523,7 @@
  */
 
 #define ALT_MODULE_CLASS_ledg altera_avalon_pio
-#define LEDG_BASE 0x8409100
+#define LEDG_BASE 0x84090e0
 #define LEDG_BIT_CLEARING_EDGE_REGISTER 0
 #define LEDG_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LEDG_CAPTURE 0
@@ -549,7 +550,7 @@
  */
 
 #define ALT_MODULE_CLASS_ledr altera_avalon_pio
-#define LEDR_BASE 0x8409110
+#define LEDR_BASE 0x84090f0
 #define LEDR_BIT_CLEARING_EDGE_REGISTER 0
 #define LEDR_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LEDR_CAPTURE 0
@@ -644,7 +645,7 @@
  */
 
 #define ALT_MODULE_CLASS_ps2_0 altera_up_avalon_ps2
-#define PS2_0_BASE 0x8409148
+#define PS2_0_BASE 0x8409138
 #define PS2_0_IRQ 4
 #define PS2_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define PS2_0_NAME "/dev/ps2_0"
@@ -672,7 +673,7 @@
  */
 
 #define ALT_MODULE_CLASS_switches altera_avalon_pio
-#define SWITCHES_BASE 0x8409130
+#define SWITCHES_BASE 0x8409110
 #define SWITCHES_BIT_CLEARING_EDGE_REGISTER 0
 #define SWITCHES_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SWITCHES_CAPTURE 0
@@ -699,13 +700,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x8409150
+#define SYSID_QSYS_0_BASE 0x8409130
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1606954365
+#define SYSID_QSYS_0_TIMESTAMP 1607420416
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -733,5 +734,19 @@
 #define TIMER_0_TICKS_PER_SEC 1000
 #define TIMER_0_TIMEOUT_PULSE_OUTPUT 0
 #define TIMER_0_TYPE "altera_avalon_timer"
+
+
+/*
+ * usb_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_usb_0 altera_up_avalon_usb
+#define USB_0_BASE 0x8409120
+#define USB_0_IRQ 5
+#define USB_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define USB_0_NAME "/dev/usb_0"
+#define USB_0_SPAN 16
+#define USB_0_TYPE "altera_up_avalon_usb"
 
 #endif /* __SYSTEM_H_ */

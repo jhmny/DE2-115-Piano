@@ -556,11 +556,43 @@
 					"strict" : false
 				},
 				{
+					"name" : "usb_0_RST_N",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_ADDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_ADDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_CS_N",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_RD_N",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_WR_N",
+					"strict" : false
+				},
+				{
 					"name" : "audio_DACDAT",
 					"strict" : false
 				},
 				{
-					"name" : "audio_and_video_config_SCLK",
+					"name" : "audio_and_video_config_0_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_0_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_0_DAT",
 					"strict" : false
 				},
 				{
@@ -756,19 +788,71 @@
 					"strict" : false
 				},
 				{
-					"name" : "ps2_CLK",
+					"name" : "usb_0_DATA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ps2_DAT",
+					"name" : "usb_0_DATA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "audio_and_video_config_SDAT",
+					"name" : "usb_0_DATA[2]",
 					"strict" : false
 				},
 				{
-					"name" : "clk_clk",
+					"name" : "usb_0_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_DATA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "audio_and_video_config_0_SDAT",
 					"strict" : false
 				},
 				{
@@ -781,6 +865,14 @@
 				},
 				{
 					"name" : "audio_BCLK",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_INT1",
+					"strict" : false
+				},
+				{
+					"name" : "usb_0_INT0",
 					"strict" : false
 				},
 				{
@@ -812,15 +904,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches_export[15]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[7]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[17]",
+					"name" : "switches_export[6]",
 					"strict" : false
 				},
 				{
@@ -828,31 +912,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switches_export[13]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[12]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[11]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[10]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[9]",
-					"strict" : false
-				},
-				{
-					"name" : "switches_export[6]",
-					"strict" : false
-				},
-				{
 					"name" : "switches_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[13]",
 					"strict" : false
 				},
 				{
@@ -860,7 +924,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "switches_export[12]",
+					"strict" : false
+				},
+				{
 					"name" : "switches_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[11]",
 					"strict" : false
 				},
 				{
@@ -868,15 +940,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "switches_export[10]",
+					"strict" : false
+				},
+				{
 					"name" : "switches_export[1]",
 					"strict" : false
 				},
 				{
-					"name" : "audio_ADCLRCK",
+					"name" : "switches_export[17]",
 					"strict" : false
 				},
 				{
-					"name" : "audio_ADCDAT",
+					"name" : "switches_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[15]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[7]",
 					"strict" : false
 				},
 				{

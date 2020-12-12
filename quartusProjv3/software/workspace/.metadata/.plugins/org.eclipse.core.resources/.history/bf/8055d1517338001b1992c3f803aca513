@@ -1,0 +1,77 @@
+/*
+ * piano.c
+ *
+ *  Created on: Dec 1, 2020
+ *      Author: Joshua
+ */
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "altera_avalon_timer_regs.h"
+#include "sys/alt_irq.h"
+#include "alt_types.h"
+#include "altera_up_avalon_ps2.h"
+#include "altera_up_ps2_keyboard.h"
+//#include "sys/.h"
+#include "altera_up_avalon_audio_and_video_config.h"
+//#include "altera_up_avalon_usb.h"
+//#include "altera_up_avalon_usb_ptd.h"
+//#include "altera_up_avalon_usb_regs.h"
+//#include "altera_up_avalon_usb_low_level_driver.h"
+//#include "altera_up_avalon_usb_high_level_driver.h"
+#include "tones.h"
+#include "io.h"
+
+volatile char byte1;
+int state = -1;
+
+void playNote(unsigned char psChar){
+    int i;
+    if (psChar == 0x1c){
+    	IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, 0b100000000000000000)
+    	IOWR_8DIRECT(AUDIO_0_BASE,0,0x8);
+    	IOWR_8DIRECT(AUDIO_0_BASE,0,0x0);
+    	for(i = 0; i <= 24000; i++){
+    		IOWR_32DIRECT(AUDIO_0_BASE,0x8,tone_c[i]);
+    		IOWR_32DIRECT(AUDIO_0_BASE,0xc,tone_c[i]);
+    	}
+    }
+    else {
+    	IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, 0b000000000000000000)
+    }
+}
+
+int main(void)
+{
+    //alt_up_ps2_dev ps2S = {.base = PS2_0_BASE,.irq_id = PS2_0_IRQ,.timeout = 0,.device_type = 1}; //manually setting ps2 variables
+    alt_up_ps2_dev *ps2S;
+	ps2S = alt_up_ps2_open_dev("/dev/ps2_0");
+    //alt_up_ps2_dev ps2S; // calling with no
+	//alt_up_ps2_dev *ps2SP =  &ps2S;  //using a pointer instatiaon
+	unsigned char psChar;
+    //alt_up_ps2_enable_read_interrupt(ps2S);
+    alt_up_ps2_init(ps2S); //suppossed to set device type does not
+    alt_up_ps2_clear_fifo(ps2S);
+    ps2S->device_type = PS2_KEYBOARD;
+	//alt_up_ps2_init(ps2SP); // sending in pointer
+    alt_putstr("instantiaion not lost in an endless loop");
+
+    while (1)
+    {
+       //alt_up_ps2_read_data_byte(ps2S, psChar); //should read from ps2 ERROR: address of data reg is completly wrong
+    	psChar=IORD_8DIRECT(ps2S->base,0); //reads directly from info
+       if (psChar == 0x32 && state != 1)//b
+        {
+    	   state =1;
+            alt_putstr("b \n");
+        }
+       if (psChar == 0x1d && state != 2){ //w
+    	   state =2 ;
+    	   alt_putstr("w \n");
+       }
+       alt_up_ps2_clear_fifo(ps2S);
+       playNote(psChar);
+   }
+    return 0;
+};
+

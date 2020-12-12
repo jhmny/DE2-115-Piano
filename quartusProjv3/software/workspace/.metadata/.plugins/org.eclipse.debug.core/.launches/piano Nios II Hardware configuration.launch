@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchConfiguration">
-<booleanAttribute key="acceptBadSysId" value="true"/>
 <stringAttribute key="byteStreamDeviceCableName" value="USB-Blaster on localhost [USB-0]"/>
 <stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
-<<<<<<< HEAD
-<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="55497"/>
-=======
-<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="50074"/>
->>>>>>> parent of 252850d... swag
+<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="65195"/>
 <booleanAttribute key="downloadProgram" value="true"/>
 <stringAttribute key="elfFile" value="C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\software\piano\piano.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>
@@ -20,9 +15,9 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <booleanAttribute key="org.eclipse.cdt.launch.ENABLE_REGISTER_BOOKKEEPING" value="false"/>
 <booleanAttribute key="org.eclipse.cdt.launch.ENABLE_VARIABLE_BOOKKEEPING" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList/&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList&gt;&lt;content id=&quot;ctrl_reg-alt_up_ps2_write_data_byte-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;data_reg-read_data_byte-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-ps2SP-main-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-ps2-alt_up_ps2_read_data_byte-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-ps2-alt_up_ps2_init-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;PS2_data-main-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;*PS2_ptr-PS2_ptr-main-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-ps2-alt_up_ps2_write_data_byte-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;irq_id-ps2-alt_up_ps2_write_data_byte-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;data_reg-alt_up_ps2_read_data_byte-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-ps2S-main-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;timeout-ps2S-main-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;device_type-ps2S-main-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-audio-playNote-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;base-audio-alt_up_audio_write_fifo-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;psChar-main-(format)&quot; val=&quot;0&quot;/&gt;&lt;content id=&quot;psChar-playNote-(format)&quot; val=&quot;4&quot;/&gt;&lt;/contentList&gt;"/>
 <stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
-<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList&gt;&#13;&#10;&lt;memoryBlockExpressionItem&gt;&#13;&#10;&lt;expression text=&quot;0x8409118&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionItem&gt;&#13;&#10;&lt;memoryBlockExpressionItem&gt;&#13;&#10;&lt;expression text=&quot;0x8409050&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionItem&gt;&#13;&#10;&lt;memoryBlockExpressionItem&gt;&#13;&#10;&lt;expression text=&quot;0x7314&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionItem&gt;&#13;&#10;&lt;memoryBlockExpressionItem&gt;&#13;&#10;&lt;expression text=&quot;0x72fc&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionItem&gt;&#13;&#10;&lt;/memoryBlockExpressionList&gt;&#13;&#10;"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="piano.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="piano"/>
 <stringAttribute key="processorCableName" value="USB-Blaster on localhost [USB-0]"/>

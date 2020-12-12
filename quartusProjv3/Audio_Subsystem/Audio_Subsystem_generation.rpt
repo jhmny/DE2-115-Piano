@@ -1,0 +1,43 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\Audio_Subsystem.qsys --block-symbol-file --output-directory=C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\Audio_Subsystem --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading quartusProjv3/Audio_Subsystem.qsys
+Progress: Reading input file
+Progress: Adding Audio [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module Audio
+Progress: Adding Audio_PLL [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module Audio_PLL
+Progress: Adding Sys_Clk [clock_source 18.1]
+Progress: Parameterizing module Sys_Clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Audio_Subsystem.Sys_Clk: The input clock frequency must be known or set by the parent if this is a subsystem.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\Audio_Subsystem.qsys --synthesis=VERILOG --output-directory=C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\Audio_Subsystem\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading quartusProjv3/Audio_Subsystem.qsys
+Progress: Reading input file
+Progress: Adding Audio [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module Audio
+Progress: Adding Audio_PLL [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module Audio_PLL
+Progress: Adding Sys_Clk [clock_source 18.1]
+Progress: Parameterizing module Sys_Clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Audio_Subsystem.Sys_Clk: The input clock frequency must be known or set by the parent if this is a subsystem.
+Info: Audio_Subsystem: Generating Audio_Subsystem "Audio_Subsystem" for QUARTUS_SYNTH
+Info: Audio: Starting Generation of Audio Controller
+Info: Audio: "Audio_Subsystem" instantiated altera_up_avalon_audio "Audio"
+Info: Audio_PLL: "Audio_Subsystem" instantiated altera_up_avalon_audio_pll "Audio_PLL"
+Info: rst_controller: "Audio_Subsystem" instantiated altera_reset_controller "rst_controller"
+Info: audio_pll: "Audio_PLL" instantiated altera_up_altpll "audio_pll"
+Info: reset_from_locked: "Audio_PLL" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: Audio_Subsystem: Done "Audio_Subsystem" with 6 modules, 13 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

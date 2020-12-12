@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 2, 2020 4:19:35 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1606954775675</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 8, 2020 1:43:31 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1607420611393</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Joshua\Documents\GitHub\DE2-115-Piano\quartusProjv3\software\piano_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nios_system.sopcinfo</SopcDesignFile>
@@ -930,103 +930,109 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>audio_and_video_config_0</slaveDescriptor>
-                <addressRange>0x08409060 - 0x0840906F</addressRange>
+                <addressRange>0x08409040 - 0x0840904F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>audio_0</slaveDescriptor>
-                <addressRange>0x08409070 - 0x0840907F</addressRange>
+                <slaveDescriptor>audio_subsystem_Audio</slaveDescriptor>
+                <addressRange>0x08409050 - 0x0840905F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_0</slaveDescriptor>
-                <addressRange>0x08409080 - 0x0840908F</addressRange>
+                <addressRange>0x08409060 - 0x0840906F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_1</slaveDescriptor>
-                <addressRange>0x08409090 - 0x0840909F</addressRange>
+                <addressRange>0x08409070 - 0x0840907F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_2</slaveDescriptor>
-                <addressRange>0x084090A0 - 0x084090AF</addressRange>
+                <addressRange>0x08409080 - 0x0840908F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_3</slaveDescriptor>
-                <addressRange>0x084090B0 - 0x084090BF</addressRange>
+                <addressRange>0x08409090 - 0x0840909F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_4</slaveDescriptor>
-                <addressRange>0x084090C0 - 0x084090CF</addressRange>
+                <addressRange>0x084090A0 - 0x084090AF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_5</slaveDescriptor>
-                <addressRange>0x084090D0 - 0x084090DF</addressRange>
+                <addressRange>0x084090B0 - 0x084090BF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_6</slaveDescriptor>
-                <addressRange>0x084090E0 - 0x084090EF</addressRange>
+                <addressRange>0x084090C0 - 0x084090CF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>hex_7</slaveDescriptor>
-                <addressRange>0x084090F0 - 0x084090FF</addressRange>
+                <addressRange>0x084090D0 - 0x084090DF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ledg</slaveDescriptor>
-                <addressRange>0x08409100 - 0x0840910F</addressRange>
+                <addressRange>0x084090E0 - 0x084090EF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ledr</slaveDescriptor>
-                <addressRange>0x08409110 - 0x0840911F</addressRange>
+                <addressRange>0x084090F0 - 0x084090FF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>keys</slaveDescriptor>
-                <addressRange>0x08409120 - 0x0840912F</addressRange>
+                <addressRange>0x08409100 - 0x0840910F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>switches</slaveDescriptor>
-                <addressRange>0x08409130 - 0x0840913F</addressRange>
+                <addressRange>0x08409110 - 0x0840911F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>ps2_0</slaveDescriptor>
-                <addressRange>0x08409148 - 0x0840914F</addressRange>
-                <addressSpan>8</addressSpan>
+                <slaveDescriptor>usb_0</slaveDescriptor>
+                <addressRange>0x08409120 - 0x0840912F</addressRange>
+                <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x08409150 - 0x08409157</addressRange>
+                <addressRange>0x08409130 - 0x08409137</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>ps2_0</slaveDescriptor>
+                <addressRange>0x08409138 - 0x0840913F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x08409158 - 0x0840915F</addressRange>
+                <addressRange>0x08409140 - 0x08409147</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

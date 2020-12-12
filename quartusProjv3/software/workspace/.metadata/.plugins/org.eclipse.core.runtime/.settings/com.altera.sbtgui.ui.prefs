@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
 newApplicationWizardPage.defaultLocation=C\:\\Users\\Joshua\\Desktop\\178\\HW\\hw6\\quartusProjv3\\software\\part3
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\Joshua\\Documents\\GitHub\\DE2-115-Piano\\quartusProjv3\\software\\piano
-newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\Joshua\\Documents\\GitHub\\DE2-115-Piano\\quartusProjv3\\nios_system.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\Joshua\\Documents\\GitHub\\DE2-115-Piano\\quartusProjv3\\software\\piano_bsp
+newSoftwareExampleWizardPage.defaultLocation=C\:\\intelFPGA_lite\\18.1\\University_Program\\Computer_Systems\\DE2-115\\DE2-115_Computer\\verilog\\software\\testProj
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\intelFPGA_lite\\18.1\\University_Program\\Computer_Systems\\DE2-115\\DE2-115_Computer\\verilog\\Computer_System.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\intelFPGA_lite\\18.1\\University_Program\\Computer_Systems\\DE2-115\\DE2-115_Computer\\verilog\\software\\testProj_bsp

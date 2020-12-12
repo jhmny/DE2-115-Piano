@@ -1,5 +1,5 @@
 Assembler report for quartusProjv3
-Wed Dec 02 16:16:11 2020
+Tue Dec 08 01:42:55 2020
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Dec 02 16:16:11 2020 ;
+; Assembler Status      ; Successful - Tue Dec 08 01:42:55 2020 ;
 ; Revision Name         ; quartusProjv3                         ;
 ; Top-level Entity Name ; quartusProjv3                         ;
 ; Family                ; Cyclone IV E                          ;
@@ -79,8 +79,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-------------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                           ;
 +----------------+-------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00A34B40                                                                                                        ;
-; Checksum       ; 0x00A34B40                                                                                                        ;
+; JTAG usercode  ; 0x009A5CC1                                                                                                        ;
+; Checksum       ; 0x009A5CC1                                                                                                        ;
 +----------------+-------------------------------------------------------------------------------------------------------------------+
 
 
@@ -90,7 +90,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Wed Dec 02 16:16:07 2020
+    Info: Processing started: Tue Dec 08 01:42:52 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off quartusProjv3 -c quartusProjv3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
@@ -98,9 +98,9 @@ Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4724 megabytes
-    Info: Processing ended: Wed Dec 02 16:16:11 2020
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Tue Dec 08 01:42:55 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 
 

@@ -1,5 +1,13 @@
 
 module nios_system (
+	audio_BCLK,
+	audio_DACDAT,
+	audio_DACLRCK,
+	audio_and_video_config_0_SDAT,
+	audio_and_video_config_0_SCLK,
+	audio_pll_clk_clk,
+	audio_pll_ref_reset_reset,
+	audio_pll_ref_clk_clk,
 	clk_clk,
 	hex_0_export,
 	hex_1_export,
@@ -12,6 +20,8 @@ module nios_system (
 	keys_export,
 	ledg_export,
 	ledr_export,
+	ps2_0_CLK,
+	ps2_0_DAT,
 	reset_reset_n,
 	sdram_clk_clk,
 	sdram_wire_addr,
@@ -31,16 +41,23 @@ module nios_system (
 	sram_OE_N,
 	sram_WE_N,
 	switches_export,
-	ps2_CLK,
-	ps2_DAT,
-	audio_ADCDAT,
-	audio_ADCLRCK,
-	audio_BCLK,
-	audio_DACDAT,
-	audio_DACLRCK,
-	audio_and_video_config_SDAT,
-	audio_and_video_config_SCLK);	
+	usb_0_INT1,
+	usb_0_DATA,
+	usb_0_RST_N,
+	usb_0_ADDR,
+	usb_0_CS_N,
+	usb_0_RD_N,
+	usb_0_WR_N,
+	usb_0_INT0);	
 
+	input		audio_BCLK;
+	output		audio_DACDAT;
+	input		audio_DACLRCK;
+	inout		audio_and_video_config_0_SDAT;
+	output		audio_and_video_config_0_SCLK;
+	output		audio_pll_clk_clk;
+	input		audio_pll_ref_reset_reset;
+	input		audio_pll_ref_clk_clk;
 	input		clk_clk;
 	output	[7:0]	hex_0_export;
 	output	[7:0]	hex_1_export;
@@ -53,6 +70,8 @@ module nios_system (
 	input	[3:0]	keys_export;
 	output	[7:0]	ledg_export;
 	output	[17:0]	ledr_export;
+	inout		ps2_0_CLK;
+	inout		ps2_0_DAT;
 	input		reset_reset_n;
 	output		sdram_clk_clk;
 	output	[12:0]	sdram_wire_addr;
@@ -72,13 +91,12 @@ module nios_system (
 	output		sram_OE_N;
 	output		sram_WE_N;
 	input	[17:0]	switches_export;
-	inout		ps2_CLK;
-	inout		ps2_DAT;
-	input		audio_ADCDAT;
-	input		audio_ADCLRCK;
-	input		audio_BCLK;
-	output		audio_DACDAT;
-	input		audio_DACLRCK;
-	inout		audio_and_video_config_SDAT;
-	output		audio_and_video_config_SCLK;
+	input		usb_0_INT1;
+	inout	[15:0]	usb_0_DATA;
+	output		usb_0_RST_N;
+	output	[1:0]	usb_0_ADDR;
+	output		usb_0_CS_N;
+	output		usb_0_RD_N;
+	output		usb_0_WR_N;
+	input		usb_0_INT0;
 endmodule

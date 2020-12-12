@@ -10,7 +10,11 @@ obj/default/piano.o: piano.c ../piano_bsp/system.h ../piano_bsp/linker.h \
  ../piano_bsp//HAL/inc/sys/alt_llist.h \
  ../piano_bsp//HAL/inc/priv/alt_dev_llist.h \
  ../piano_bsp//drivers/inc/altera_up_ps2_keyboard.h \
- ../piano_bsp//drivers/inc/altera_up_avalon_ps2.h
+ ../piano_bsp//drivers/inc/altera_up_avalon_ps2.h \
+ ../piano_bsp//drivers/inc/altera_up_avalon_audio_and_video_config.h \
+ ../piano_bsp//drivers/inc/altera_up_avalon_audio_and_video_config_regs.h \
+ ../piano_bsp//drivers/inc/altera_up_avalon_audio.h \
+ ../piano_bsp//drivers/inc/altera_up_avalon_audio_regs.h tones.h
 
 ../piano_bsp/system.h:
 
@@ -43,3 +47,13 @@ obj/default/piano.o: piano.c ../piano_bsp/system.h ../piano_bsp/linker.h \
 ../piano_bsp//drivers/inc/altera_up_ps2_keyboard.h:
 
 ../piano_bsp//drivers/inc/altera_up_avalon_ps2.h:
+
+../piano_bsp//drivers/inc/altera_up_avalon_audio_and_video_config.h:
+
+../piano_bsp//drivers/inc/altera_up_avalon_audio_and_video_config_regs.h:
+
+../piano_bsp//drivers/inc/altera_up_avalon_audio.h:
+
+../piano_bsp//drivers/inc/altera_up_avalon_audio_regs.h:
+
+tones.h:

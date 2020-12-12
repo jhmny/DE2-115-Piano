@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Tue Dec 01 11:29:48 PST 2020
+ * Generated: Mon Dec 07 22:56:52 PST 2020
  */
 
 /*
@@ -65,6 +65,7 @@
 #include "altera_up_avalon_audio.h"
 #include "altera_up_avalon_audio_and_video_config.h"
 #include "altera_up_avalon_ps2.h"
+#include "altera_up_avalon_usb.h"
 
 /*
  * Allocate the device storage
@@ -76,8 +77,9 @@ ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID_QSYS_0, sysid_qsys_0);
 ALTERA_AVALON_TIMER_INSTANCE ( HIRES_TIMER_0, hires_timer_0);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER_0, timer_0);
 ALTERA_UP_AVALON_AUDIO_AND_VIDEO_CONFIG_INSTANCE ( AUDIO_AND_VIDEO_CONFIG_0, audio_and_video_config_0);
-ALTERA_UP_AVALON_AUDIO_INSTANCE ( AUDIO_0, audio_0);
+ALTERA_UP_AVALON_AUDIO_INSTANCE ( AUDIO_SUBSYSTEM_AUDIO, audio_subsystem_Audio);
 ALTERA_UP_AVALON_PS2_INSTANCE ( PS2_0, ps2_0);
+ALTERA_UP_AVALON_USB_INSTANCE ( USB_0, usb_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -105,6 +107,7 @@ void alt_sys_init( void )
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
     ALTERA_UP_AVALON_AUDIO_AND_VIDEO_CONFIG_INIT ( AUDIO_AND_VIDEO_CONFIG_0, audio_and_video_config_0);
-    ALTERA_UP_AVALON_AUDIO_INIT ( AUDIO_0, audio_0);
+    ALTERA_UP_AVALON_AUDIO_INIT ( AUDIO_SUBSYSTEM_AUDIO, audio_subsystem_Audio);
     ALTERA_UP_AVALON_PS2_INIT ( PS2_0, ps2_0);
+    ALTERA_UP_AVALON_USB_INIT ( USB_0, usb_0);
 }
